@@ -13,10 +13,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Navigate to my-portfolio directory
+        run: cd my-portfolio
+
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 16
+          node-version: 14  # Or the version specified in your package.json
 
       - name: Install dependencies
         run: npm install
@@ -29,4 +32,3 @@ jobs:
 
       - name: Upload to S3
         run: aws s3 sync ./build s3://${{ secrets.AWS_S3_BUCKET_NAME }}
-
