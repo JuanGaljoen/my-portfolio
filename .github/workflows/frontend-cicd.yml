@@ -13,20 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Navigate to my-portfolio directory
-        run: cd my-portfolio
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14  # Or the version specified in your package.json
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build the React app
-        run: npm run build
-
       - name: Configure AWS CLI
         run: aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }} && aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }} && aws configure set default.region af-south-1
 
