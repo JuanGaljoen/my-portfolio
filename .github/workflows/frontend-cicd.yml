@@ -1,26 +1,53 @@
+# name: Upload Website
+
+# on:
+#   push:
+#     branches:
+#     - main
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#     - uses: actions/checkout@v2
+#     - uses: actions/setup-node@v2
+#     - uses: jakejarvis/s3-sync-action@master
+#     - name: Install dependencies 
+#         run: npm install 
+#     - name: Build Website 
+#         run: npm run build 
+#       with:
+#         args: --acl public-read --follow-symlinks --delete
+#       env:  
+#         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#         AWS_REGION: 'af-south-1'
+#     - name: Copy to s3
+#         run: aws s3 sync ./build/. s3://********
+
 name: Upload Website
 
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
-    - uses: jakejarvis/s3-sync-action@master
-    - name: Install dependencies 
-        run: npm install 
-    - name: Build Website 
-        run: npm run build 
-      with:
-        args: --acl public-read --follow-symlinks --delete
-      env:  
-        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        AWS_REGION: 'af-south-1'
-    - name: Copy to s3
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - uses: jakejarvis/s3-sync-action@master
+      - name: Install dependencies
+        run: npm install
+      - name: Build Website
+        run: npm run build
+        with:
+          args: --acl public-read --follow-symlinks --delete
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_REGION: 'af-south-1'
+      - name: Copy to s3
         run: aws s3 sync ./build/. s3://juan-resume-bucket
