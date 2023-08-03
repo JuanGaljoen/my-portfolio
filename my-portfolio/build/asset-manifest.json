@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.251a05e1.css",
+    "main.js": "/static/js/main.3ef5feec.js",
+    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/inventory.jpg": "/static/media/inventory.4968057ad5fd837f7dea.jpg",
+    "static/media/cart.jpg": "/static/media/cart.cbb40696603165d0e39c.jpg",
+    "static/media/weather.jpg": "/static/media/weather.0bb5b2737cb9d863ce5d.jpg",
+    "static/media/memory.jpg": "/static/media/memory.c19645cd880f77871048.jpg",
+    "static/media/JuanViljoenResume.pdf": "/static/media/JuanViljoenResume.da9d81e8322fed202e08.pdf",
+    "static/media/mePic.jpg": "/static/media/mePic.5a3c692664466c5e4ab4.jpg",
+    "static/media/cars.jpg": "/static/media/cars.aa0fedd6fb96f9ebd83d.jpg",
+    "static/media/todo.jpg": "/static/media/todo.c025938dd970f3d5824b.jpg",
+    "static/media/WebDev.png": "/static/media/WebDev.6d9e84b7283ed5d4d10f.png",
+    "static/media/AWSCCP.pdf": "/static/media/AWSCCP.e5e06733bc97e7e04743.pdf",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/index.html",
+    "main.251a05e1.css.map": "/static/css/main.251a05e1.css.map",
+    "main.3ef5feec.js.map": "/static/js/main.3ef5feec.js.map",
+    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.251a05e1.css",
+    "static/js/main.3ef5feec.js"
+  ]
+}
