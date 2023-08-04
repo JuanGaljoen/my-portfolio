@@ -1,42 +1,44 @@
-Resume/Portfolio Readme
-Welcome to my resume/portfolio! This site is hosted at https://resume.juanviljoen.cloud/ and showcases my skills, projects, and experiences. The frontend of the portfolio was built using React. Below is an overview of the technologies used in this project:
+Portfolio Readme
+Welcome to my portfolio! This site is hosted at https://resume.juanviljoen.cloud/ and showcases my skills, projects, and experiences. The frontend of the portfolio was built using React. Below is an overview of the technologies used in this project:
 
 Technologies and Services Used
-AWS S3 (Simple Storage Service):
-
+-AWS S3 (Simple Storage Service):
 Used to store the static files, including HTML, CSS, JavaScript, and images that make up the frontend of the portfolio.
-AWS CloudFront:
 
+-AWS CloudFront:
 Used as a content delivery network (CDN) to serve the portfolio's static content globally with low latency and high performance.
-AWS Certificate Manager:
 
+-AWS Certificate Manager:
 Used to manage SSL/TLS certificates to ensure secure communication between clients and CloudFront.
-AWS Lambda:
 
-Utilized for serverless compute to perform certain backend tasks if needed, such as handling contact form submissions or other dynamic functionalities.
-DynamoDB:
+-AWS Lambda:
+Utilized for serverless compute to run the code that adds a view to the visitor count.
 
-Utilized as a NoSQL database for storing data like user contacts, project details, or any other necessary information.
+-API Gateway: 
+To enhance the portfolio with dynamic functionalities and enable serverless compute, an API Gateway is used. It allows interaction with the AWS Lambda function to add to the visitor count dynamically.
+
+-DynamoDB:
+Utilized as a NoSQL database for storing visitor count.
+
 GitHub Actions:
-
 Used to automate the build and deployment process of the portfolio whenever changes are pushed to the main branch.
-Terraform:
 
+Terraform:
 Used for infrastructure as code (IAC) to define and provision the AWS resources required for hosting the portfolio.
 Deployment Process
 The deployment process for this portfolio is automated using GitHub Actions. Whenever changes are pushed to the main branch, the following steps are performed:
 
-Build Frontend:
-
+-Build Frontend:
 The React frontend is built, optimized, and prepared for deployment.
-Terraform Deployment:
 
+ <! --- In progress ---> 
+-Terraform Deployment:
 Terraform scripts are executed to provision or update the necessary AWS resources, including S3 buckets, CloudFront distribution, Lambda functions, and DynamoDB tables.
-Secure Communication:
 
+-Secure Communication:
 SSL/TLS certificates are managed using AWS Certificate Manager, ensuring secure communication between clients and the CloudFront distribution.
-Global Distribution:
 
+-Global Distribution:
 CloudFront is configured to distribute the static content of the portfolio to edge locations worldwide, reducing latency for users.
 
 Feedback and Contact
