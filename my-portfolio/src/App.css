@@ -539,7 +539,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     padding-bottom: 25px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .certs {
     /* Adjust the layout for mobile view, for example, stack the images vertically */
     display: block;
@@ -550,8 +550,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     /* Adjust the image size for mobile view */
     max-width: 400px; /* Change this value to your desired size */
     height: 100px;
-    /* padding-right: 50px;
-    padding-bottom: 25px; */
   }
 }
 
@@ -705,7 +703,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 375px) {
   .background-about-image {
 display: none;
   }
@@ -721,6 +719,9 @@ display: none;
     font-size:larger !important; 
     max-width: 100;
   }
+  nav.navbar.scrolled{
+  display: none;
+}
 }
 
 
