@@ -534,8 +534,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .cert-image {
     /* Adjust the image size for mobile view */
     max-width: auto; /* Change this value to your desired size */
-    height: 100px;
-    padding-right: 40px;
+    height: 150px;
+    padding-right: 50px;
+    padding-bottom: 25px;
   }
 }
 
