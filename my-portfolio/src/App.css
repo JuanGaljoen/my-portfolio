@@ -539,6 +539,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     padding-bottom: 25px;
   }
 }
+@media (max-width: 320px) {
+  .certs {
+    /* Adjust the layout for mobile view, for example, stack the images vertically */
+    display: block;
+    text-align: center; /* Center the images when in a single column */
+  }
+
+  .cert-image {
+    /* Adjust the image size for mobile view */
+    max-width: 400px; /* Change this value to your desired size */
+    height: 100px;
+    /* padding-right: 50px;
+    padding-bottom: 25px; */
+  }
+}
 
 
 /************ Projects Css ************/
@@ -690,14 +705,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 320px) {
   .background-about-image {
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
-    margin-left: 90%;
-    left: -100px;
-    /* half the width */
+display: none;
+  }
+  .about p{
+    width: 90%;
+  }
+
+  .me-pic{
+    width: 90%;
+  }
+
+  .name-heading{
+    font-size:larger !important; 
+    max-width: 100;
   }
 }
 
