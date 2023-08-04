@@ -501,29 +501,44 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: auto;
   border-radius: 10px;
   display: inline;
-  padding-right: 60px;
+  padding-right: 50px;
 }
-
-@media screen and (max-width: 600px) {
-  .certs {
-      max-width: 300px;
-      align-items: center; /* Center the items on smaller screens */
-  }
-
-  .cert-link {
-      margin-bottom: 10px; /* Reduce the margin between images on smaller screens */
-  }
-
-  .skill{
-    height: 950px;
-  }
 
   .cert-images-container {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
+
+.certifications-container {
+  /* Your existing styles for the container */
+
+  /* Add the following styles to make the container responsive */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+/*making the certs responsive*/
+
+
+/* Add a media query for mobile devices */
+@media (max-width: 767px) {
+  .certs {
+    /* Adjust the layout for mobile view, for example, stack the images vertically */
+    display: block;
+    text-align: center; /* Center the images when in a single column */
+  }
+
+  .cert-image {
+    /* Adjust the image size for mobile view */
+    max-width: auto; /* Change this value to your desired size */
+    height: 100px;
+    padding-right: 40px;
+  }
+}
+
 
 /************ Projects Css ************/
 .project {
