@@ -12,8 +12,12 @@ export const Footer = () => {
 
   return (
     <div>
-      <h3>Visitor Count: {views}</h3>
-    </div>
+    <i class="fa fa-user medium-icon"></i>
+    <span class="counter-title"> Viewer Count </span>
+     <span class="timer counter alt-font appear" data-to={views} data-speed="7000">{views}</span>
+   
+</div>
+    
   );
 };
 
