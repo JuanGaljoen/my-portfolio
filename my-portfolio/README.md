@@ -2,6 +2,8 @@ Portfolio Readme
 
 Welcome to my portfolio! This site is hosted at https://resume.juanviljoen.cloud/ and showcases my skills, projects, and experiences. The frontend of the portfolio was built using React. Below is an overview of the technologies used in this project:
 
+![resumeFlow](https://github.com/JuanBiljoen/cloud-resume/assets/111522309/8dbb948f-9797-438a-aaa9-e498057f8db1)
+
 Technologies and Services Used
 -AWS S3 (Simple Storage Service):
 Used to store the static files, including HTML, CSS, JavaScript, and images that make up the frontend of the portfolio.
