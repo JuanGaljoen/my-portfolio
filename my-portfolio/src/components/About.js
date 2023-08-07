@@ -2,8 +2,10 @@ import pic1 from "../images/mePic.jpg"
 import React from "react";
 import samplePDF2 from '../Resume/JuanViljoenResume.pdf';
 
+//define the About component 
 export const About = () => {
 
+    //return jsx representing the about section
     return (
         <div className="about-container">
             <div className="about" id="aboutme" xs={12} md={6} xl={7}>
@@ -14,7 +16,7 @@ export const About = () => {
                     <img className="background-about-image" src={"https://i.pinimg.com/564x/81/8f/4a/818f4a120483279ef50b769acf8188a6.jpg"} alt="astronaut" xs={12} md={6} xl={7}></img>
                     In my spare time I'm either working on an old Vespa, cycling, taking my dog for a hike/fishing trip or spending time with friends. I am very passionate about music, classic cars and motorbikes.
                 </p>
-                {/* <h4>Click here to download my resume</h4> */}
+
                 <a className="resume-button" href={samplePDF2} target="_blank"
                     rel="noreferrer">
                     Click here to view my resume

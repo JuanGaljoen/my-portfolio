@@ -1,19 +1,25 @@
-
 import { Col } from "react-bootstrap";
 
-
+// Functional component representing a project card
 export const ProjectCard = ({ title, description, imgUrl, link }) => {
   return (
-    <Col size={4} sm={4} md={6} >
+    // The Col component from react-bootstrap, defining the column size for the project card
+    <Col size={4} sm={4} md={6}>
+      {/* Container for the project card */}
       <div className="proj-imgbx">
+        {/* Link to the project, opens in a new tab */}
         <a className="project-image" href={link} target="_blank" rel="noreferrer">
-          <img className="image-proj" src={imgUrl} alt="project-visual"></img>
+          {/* Project image */}
+          <img className="image-proj" src={imgUrl} alt="project-visual" />
         </a>
+        {/* Container for project title and description */}
         <div className="proj-txtx">
+          {/* Project title */}
           <h4>{title}</h4>
+          {/* Project description */}
           <span>{description}</span>
         </div>
       </div>
     </Col>
-  )
-}
+  );
+};
