@@ -4,7 +4,7 @@ export const Footer = () => {
   const [views, setViews] = useState(0);
 
   useEffect(() => {
-    fetch('https://pxyjmq6fo6.execute-api.af-south-1.amazonaws.com/prod',
+    fetch(process.env.REACT_APP_API_URL,
       {method: 'GET'}) 
       .then(response => response.json())
       .then(data => setViews(data));
