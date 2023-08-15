@@ -633,7 +633,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-top: 50px;
 
 }
-
+/* 
 @keyframes mymove {
   from {
     background-color: red;
@@ -643,7 +643,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     background-color: blue;
   }
 
-}
+} */
 
 .about h2 {
   font-size: 45px;
@@ -687,7 +687,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 180px;
   position: absolute;
   margin-left: 90%;
-  left: -175px;
+  /* left: -175px; */
   /* half the width */
   animation: updown 3s linear infinite;
 }
@@ -704,6 +704,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 @media only screen and (max-width: 375px) {
+  .background-about-image {
+display: none;
+  }
+  .about p{
+    width: 90%;
+  }
+
+  .me-pic{
+    width: 90%;
+  }
+
+  .name-heading{
+    font-size:larger !important; 
+    max-width: 100;
+  }
+  nav.navbar.scrolled{
+  display: none;
+}
+}
+@media only screen and (max-width: 425px) {
   .background-about-image {
 display: none;
   }
