@@ -106,7 +106,7 @@ export const Skills = () => {
                 <div className="certs">
                     <h2 className='cert-heading'>Certifications</h2>
 
-                    <a href={cert1} target="_blank">
+                    <a href={cert1} target="_blank"  rel="noreferrer">
                         <img
                             className="cert-image"
                             src="https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/linkedin_thumb_image.png"
@@ -115,7 +115,7 @@ export const Skills = () => {
                         />
                     </a>
 
-                    <a href={cert2} target="_blank">
+                    <a href={cert2} target="_blank" rel="noreferrer">
                         <img
                             className="cert-image"
                             src="https://fundiconnect.co.za/wp-content/uploads/2021/06/Hyperion-Full-Stack-Web-Dev.png"
