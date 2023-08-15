@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
+const {REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_USER_ID} = process.env
+
 export const Contact = () => {
   // Create a reference for the form element
   const form = useRef();
@@ -11,10 +13,10 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_dqge20c", // Email service ID
-        "template_3xfymdr", // Template ID
+        `${REACT_APP_SERVICE_ID}`, // Email service ID
+        `${REACT_APP_TEMPLATE_ID}`, // Template ID
         form.current, // Form element to submit
-        "F-yuhLre4fD-EYstB" // User ID (optional)
+        `${REACT_APP_USER_ID}` // User ID (optional)
       )
       .then(
         function(response) {
