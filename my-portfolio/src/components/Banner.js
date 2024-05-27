@@ -10,9 +10,9 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  
+
   // Array of texts to be rotated
-  const toRotate = ["Cloud Engineer","Full Stack Web Developer", "Entrepreneur"];
+  const toRotate = ["Cloud Engineer", "Full Stack Web Developer", "Entrepreneur"];
   const period = 2000; // Time period between text rotations
 
   // useEffect hook to handle the text rotation animation
