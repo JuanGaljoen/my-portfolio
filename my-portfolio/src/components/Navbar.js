@@ -51,7 +51,7 @@ function NavBar() {
                             <a href="https://github.com/JuanBiljoen"><img src={"https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg"} alt="" /></a>
                         </div>
                         {/* 'Let's Connect' button */}
-                        <button href="#connect" className='vvd' onClick={() => onUpdateActiveLink("connect")}><span>Let's Connect</span></button>
+                        
                     </span>
                 </Navbar.Collapse>
             </Container>
