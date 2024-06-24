@@ -1,6 +1,6 @@
 import pic1 from "../images/mePic.jpg"
 import React from "react";
-import samplePDF2 from '../Resume/JuanViljoenResume.pdf';
+import resume from '../Resume/Juan_Viljoen_resume.pdf';
 
 //define the About component 
 export const About = () => {
@@ -17,7 +17,7 @@ export const About = () => {
                     In my spare time I'm either working on an old Vespa, cycling, taking my dog for a hike/fishing trip or spending time with friends. I am very passionate about music, classic cars and motorbikes.
                 </p>
 
-                <a className="resume-button" href={samplePDF2} target="_blank"
+                <a className="resume-button" href={resume} target="_blank"
                     rel="noreferrer">
                     Click here to view my resume
                 </a>
