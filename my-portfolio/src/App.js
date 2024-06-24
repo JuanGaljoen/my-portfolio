@@ -6,13 +6,11 @@ import { Skills } from './components/Skills';
 import { Projects } from "./components/Projects"
 import { About } from './components/About';
 import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
-
-
+import { Footer } from './components/Footer';//fix
 
 function App() {
   useEffect(() => {
-    document.title =  "Juan's Portfolio";
+    document.title = "Juan's Portfolio";
   }, []);
   return (
     <div className="App">
@@ -22,7 +20,7 @@ function App() {
       <Projects />
       <About />
       <Contact />
-      <Footer />
+      {/* TODO: fix counter in Footer */}
     </div>
   );
 }
