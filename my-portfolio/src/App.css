@@ -669,7 +669,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1.1em;
 }
 
-/* about */
+/* About */
+
 .about {
   color: #B8B8B8;
   font-size: 18px;
@@ -795,6 +796,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   nav.navbar.scrolled {
     display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .me-pic {
+    width: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .me-pic {
+    width: 500px;
   }
 }
 
