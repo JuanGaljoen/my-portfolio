@@ -106,7 +106,7 @@ export const Skills = () => {
                 <div className="certs">
                     <h2 className='cert-heading'>Certifications</h2>
 
-                    <a href={cert1} target="_blank"  rel="noreferrer">
+                    <a href={cert1} target="_blank" rel="noreferrer">
                         <img
                             className="cert-image"
                             src="https://images.credly.com/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/linkedin_thumb_image.png"
