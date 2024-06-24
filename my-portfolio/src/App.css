@@ -379,7 +379,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-repeat: no-repeat;
   margin-bottom: 110px;
   height: 50vw;
-
 }
 
 .banner .tagline {
@@ -462,7 +461,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 @media (min-width: 1920px) {
   .banner {
-    padding-top: 700px;
+    padding: 700px 50px 140px 50px;
   }
 }
 
