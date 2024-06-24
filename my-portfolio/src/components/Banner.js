@@ -64,13 +64,9 @@ export const Banner = () => {
                   <span className="tagline">Welcome to my Portfolio!</span>
                   {/* The text rotation effect */}
                   <h1 className="name-heading">{`Hi! I'm Juan,`} <span className="" dataPeriod="1000" data-rotate='[ " Full Stack Web Developer", "Entrepreneur", "Jeweller" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Enthusiastic about joining the world of Cloud Engineering, I am driven by a passion for cutting-edge technologies and problem-solving. My hands-on experience with AWS, combined with a strong foundation in cloud computing principles, enables me to contribute to scalable, secure, and reliable cloud infrastructures. I also have experience in building full stack web applications using the MERN stack. I eagerly seek opportunities to collaborate with talented teams, optimize cloud environments, and support organizations in achieving their goals. Let's connect and explore how my expertise can add value to your projects and team. I am ready to make a positive impact as a Cloud Engineer. </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <p className="intro-paragraph">I am an enthusiastic and ambitious developer with experience in full-stack development, working with React and C# .NET and AWS. My professional journey is marked by a strong sense of pride and ownership in my work, understanding its critical impact on the overall success of the business. As a critical thinker and problem solver, I excel in fast-paced, agile environments that prioritize continuous learning and improvement. My commitment to delivering high-quality solutions drives meto stay at the forefront of technology and development practices.</p>
                 </div>}
             </TrackVisibility>
-          </Col>
-          <Col xs={12} md={6} xl={5}>
-            {/* The Col element on the right side */}
           </Col>
         </Row>
       </Container>
