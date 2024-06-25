@@ -1,13 +1,10 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-const {REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_USER_ID} = process.env
+const { REACT_APP_SERVICE_ID, REACT_APP_TEMPLATE_ID, REACT_APP_USER_ID } = process.env
 
 export const Contact = () => {
-  // Create a reference for the form element
   const form = useRef();
-
-  // Function to send the email using the emailjs library
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -19,14 +16,10 @@ export const Contact = () => {
         `${REACT_APP_USER_ID}` // User ID (optional)
       )
       .then(
-        function(response) {
-          // Success callback
-          //console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+        function (response) {
           alert("Email sent successfully!");
         },
-        function(error) {
-          // Error callback
-          //console.log("FAILED", error);
+        function (error) {
           alert("FAILED!" + error);
         }
       );

@@ -9,7 +9,6 @@ import { ProjectCard } from "./ProjectCard";
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
 
-
 export const Projects = () => {
   const projects = [
     {
