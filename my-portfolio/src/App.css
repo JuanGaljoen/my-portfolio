@@ -1,6 +1,5 @@
 /* Default styles */
 
-
 .counter-section i {
   display: block;
   margin: 0 0 10px
@@ -56,8 +55,6 @@
   margin-top: 20px;
 }
 
-
-
 /* Media queries for cellphones */
 @media only screen and (max-width: 480px) {
   /* Adjust layout and styling for small screens */
@@ -88,9 +85,8 @@
 
 }
 
-
-
 /*default css*/
+
 * {
   margin: 0;
   padding: 0;
@@ -331,7 +327,6 @@ nav.navbar .navbar-toggler:focus {
   box-shadow: none;
 }
 
-
 nav.navbar .navbar-toggler-icon:focus {
   border-bottom: 2px solid #fff;
 }
@@ -466,6 +461,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Skills Css ************/
+
 .skill {
   padding: 0 0 50px 0;
   position: relative;
@@ -553,7 +549,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   align-items: center;
 }
 
-
 .certifications-container {
   /* Your existing styles for the container */
 
@@ -564,7 +559,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /*making the certs responsive*/
-
 
 /* Add a media query for mobile devices */
 @media (max-width: 767px) {
@@ -601,8 +595,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
+/*Projects Css */
 
-/************ Projects Css ************/
 .project {
   padding: 80px 0;
   position: relative;
@@ -682,18 +676,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding-top: 50px;
 
 }
-
-/* 
-@keyframes mymove {
-  from {
-    background-color: red;
-  }
-
-  to {
-    background-color: blue;
-  }
-
-} */
 
 .about h2 {
   font-size: 45px;
@@ -811,7 +793,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-
 .resume-button {
   background-color: grey;
   height: 25px;
@@ -823,16 +804,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-bottom: 0px;
   margin-top: 15px;
   padding: 5px;
-
 }
-
 
 .resume-button:hover {
   background-color: rgb(249, 105, 14);
   color: white;
 }
-
-
 
 @keyframes updown {
   0% {
@@ -846,11 +823,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   100% {
     transform: translateY(-20px);
   }
-
 }
 
+/* Contact */
 
-/* contact */
 form {
   display: flex;
   align-items: flex-start;
