@@ -45,13 +45,10 @@ function NavBar() {
                     </Nav>
                     <span className='navbar-text'>
                         <div className='social-icon'>
-                            {/* Social media icons */}
                             <a href="https://juancodes.blogspot.com/"><img src={"https://www.iconpacks.net/icons/1/free-blogger-icon-107-thumb.png"} alt="" /></a>
                             <a href="https://www.linkedin.com/in/juan-viljoen-409895245/"><img src={"https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png"} alt="" /></a>
                             <a href="https://github.com/JuanBiljoen"><img src={"https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg"} alt="" /></a>
                         </div>
-                        {/* 'Let's Connect' button */}
-                        
                     </span>
                 </Navbar.Collapse>
             </Container>

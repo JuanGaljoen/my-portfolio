@@ -4,7 +4,7 @@ import { Col } from "react-bootstrap";
 export const ProjectCard = ({ title, description, imgUrl, link }) => {
   return (
     // The Col component from react-bootstrap, defining the column size for the project card
-    <Col size={4} sm={4} md={6}>
+    <Col size={4} sm={6} md={4} lg={3} xl={3}>
       {/* Container for the project card */}
       <div className="proj-imgbx">
         {/* Link to the project, opens in a new tab */}

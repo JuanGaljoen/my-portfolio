@@ -3,7 +3,6 @@ import 'react-multi-carousel/lib/styles.css';
 import cert1 from "../assets/certs/AWSCCP.pdf"
 import cert2 from "../assets/certs/WebDev.png"
 
-
 export const Skills = () => {
     const responsive = {
         superLargeDesktop: {
@@ -100,8 +99,6 @@ export const Skills = () => {
                 </div>
             </div>
 
-
-
             <div className="certifications-container">
                 <div className="certs">
                     <h2 className='cert-heading'>Certifications</h2>
@@ -124,7 +121,6 @@ export const Skills = () => {
                     </a>
                 </div>
             </div>
-
         </section>
     )
 }
