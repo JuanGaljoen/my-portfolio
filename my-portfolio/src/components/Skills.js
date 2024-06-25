@@ -1,7 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import cert1 from "../Certs/AWSCCP.pdf"
-import cert2 from "../Certs/WebDev.png"
+import cert1 from "../assets/certs/AWSCCP.pdf"
+import cert2 from "../assets/certs/WebDev.png"
 
 
 export const Skills = () => {

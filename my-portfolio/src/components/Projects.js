@@ -1,13 +1,14 @@
-import cartPic from "../images/cart.jpg"
-import memoryPic from "../images/memory.jpg"
-import portfolioPic from "../images/resume.jpg"
-import todoPic from "../images/todo.jpg"
-import inventoryPic from "../images/inventory.jpg"
-import carsPic from "../images/cars.jpg"
+import cartPic from "../assets/images/cart.jpg"
+import memoryPic from "../assets/images/memory.jpg"
+import portfolioPic from "../assets/images/resume.jpg"
+import todoPic from "../assets/images/todo.jpg"
+import inventoryPic from "../assets/images/inventory.jpg"
+import carsPic from "../assets/images/cars.jpg"
 import { Container, Row, Col, Tab } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import TrackVisibility from 'react-on-screen';
 import 'animate.css';
+
 
 export const Projects = () => {
   const projects = [
@@ -63,7 +64,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {projects.map((project, index) => (
-                          <Col md={4} key={index}>
+                          <Col xs={12} sm={6} md={4} lg={3} xl={3} key={index}>
                             <ProjectCard {...project} />
                           </Col>
                         ))}

@@ -1,6 +1,6 @@
-import pic1 from "../images/mePic.jpg"
+import pic1 from "../assets/images/mePic.jpg"
 import React from "react";
-import resume from '../Resume/Juan_Viljoen_resume.pdf';
+import resume from '../assets/resume/Juan_Viljoen_resume.pdf';
 
 //define the About component 
 export const About = () => {
