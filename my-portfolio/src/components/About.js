@@ -2,10 +2,8 @@ import pic1 from "../assets/images/mePic.jpg"
 import React from "react";
 import resume from '../assets/resume/Juan_Viljoen_resume.pdf';
 
-//define the About component 
 export const About = () => {
 
-    //return jsx representing the about section
     return (
         <div className="about-container">
             <div className="about" id="aboutme" xs={12} md={6} xl={7}>
