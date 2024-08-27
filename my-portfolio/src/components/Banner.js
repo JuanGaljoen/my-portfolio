@@ -10,17 +10,14 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
 
-  // Array of texts to be rotated
   const toRotate = ["Cloud Engineer", "Full Stack Web Developer", "Entrepreneur"];
   const period = 2000; // Time period between text rotations
 
-  // useEffect hook to handle the text rotation animation
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
     }, delta);
 
-    // Cleanup function to clear the interval when the component unmounts
     return () => { clearInterval(ticker) };
   }, [text])
 
@@ -50,13 +47,11 @@ export const Banner = () => {
     }
   }
 
-  // JSX representing the 'Banner' section
   return (
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
-            {/* Using 'TrackVisibility' to add fadeIn animation when the component is visible */}
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
