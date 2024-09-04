@@ -56,7 +56,6 @@ export const Banner = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Welcome to my Portfolio!</span>
-                  {/* The text rotation effect */}
                   <h1 className="name-heading">{`Hi! I'm Juan,`} <span className="" dataPeriod="1000" data-rotate='[ " Full Stack Web Developer", "Entrepreneur", "Jeweller" ]'><span className="wrap">{text}</span></span></h1>
                   <p className="intro-paragraph">I am an enthusiastic and ambitious developer with experience in full-stack development, working with React and C# .NET and AWS. My professional journey is marked by a strong sense of pride and ownership in my work, understanding its critical impact on the overall success of the business. As a critical thinker and problem solver, I excel in fast-paced, agile environments that prioritize continuous learning and improvement. My commitment to delivering high-quality solutions drives meto stay at the forefront of technology and development practices.</p>
                 </div>}
