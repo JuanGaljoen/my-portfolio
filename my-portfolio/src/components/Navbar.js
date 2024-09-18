@@ -4,11 +4,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import { useEffect, useState } from 'react';
 
 function NavBar() {
-    // State variables to track the active link and the scroll position
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
-    // useEffect hook to add scroll event listener and update the scroll position
     useEffect(() => {
         const onScroll = () => {
             if (window.scrollY > 50) {
@@ -18,25 +16,20 @@ function NavBar() {
             }
         }
 
-        // Add the scroll event listener when the component mounts
         window.addEventListener("scroll", onScroll)
 
-        // Clean up the scroll event listener when the component unmounts
         return () => window.removeEventListener("scroll", onScroll)
     }, [])
 
-    // Function to update the active link in the navigation bar
     const onUpdateActiveLink = (value) => {
         setActiveLink(value);
     }
 
     return (
-        // Navigation bar component with Bootstrap styling
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        {/* Navigation links with conditional class 'active' based on activeLink state */}
                         <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActiveLink("home")}>Home</Nav.Link>
                         <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActiveLink("skills")}>Skills</Nav.Link>
                         <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : "navbar-link"} onClick={() => onUpdateActiveLink("projects")}>Projects</Nav.Link>
