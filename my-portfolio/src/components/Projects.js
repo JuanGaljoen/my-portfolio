@@ -50,31 +50,29 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="project" id="projects">
-      <Container>
-        <Row>
-          <Col size={12}>
-            <TrackVisibility>
-              {({ isVisible }) =>
-                <div className={isVisible ? "fadeIn" : ""}>
-                  <h2>Projects</h2>
-                  <p>Here are a couple of projects I have worked on thus far.</p>
-                  <Tab.Content className={isVisible ? "slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {projects.map((project, index) => (
-                          <Col xs={12} sm={6} md={4} lg={3} xl={3} key={index}>
-                            <ProjectCard {...project} />
-                          </Col>
-                        ))}
-                      </Row>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </div>}
-            </TrackVisibility>
-          </Col>
-        </Row>
-      </Container>
-    </section>
+    <Container className="project" id="projects" >
+      <Row>
+        <Col size={12}>
+          <TrackVisibility>
+            {({ isVisible }) =>
+              <div className={isVisible ? "fadeIn" : ""}>
+                <h2>Projects</h2>
+                <p>Here are a couple of projects I have worked on thus far.</p>
+                <Tab.Content className={isVisible ? "slideInUp" : ""}>
+                  <Tab.Pane eventKey="first">
+                    <Row>
+                      {projects.map((project, index) => (
+                        <Col xs={12} sm={6} md={4} lg={3} xl={3} key={index}>
+                          <ProjectCard {...project} />
+                        </Col>
+                      ))}
+                    </Row>
+                  </Tab.Pane>
+                </Tab.Content>
+              </div>}
+          </TrackVisibility>
+        </Col>
+      </Row>
+    </Container>
   )
 }
