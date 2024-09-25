@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
-  // State variables used for text rotation animation
+
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
@@ -11,7 +11,7 @@ export const Banner = () => {
   const [index, setIndex] = useState(1);
 
   const toRotate = ["Cloud Engineer", "Full Stack Web Developer", "Entrepreneur"];
-  const period = 2000; // Time period between text rotations
+  const period = 2000;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -21,7 +21,6 @@ export const Banner = () => {
     return () => { clearInterval(ticker) };
   }, [text])
 
-  // Function to handle text rotation
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
