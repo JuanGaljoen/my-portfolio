@@ -88,11 +88,6 @@ export const Skills = () => {
                                     <h5>MongoDB</h5>
                                     <progress value="45" max="100"></progress>
                                 </div>
-                                <div className="item">
-                                    <img className='skill-image' src={"https://resources.dfuob.com/wp-content/uploads/2020/04/logo_lockup_analytics_icon_vertical_black_2x.png"} alt="skill-logo" />
-                                    <h5>Google Analytics</h5>
-                                    <progress value="38" max="100"></progress>
-                                </div>
                             </Carousel>
                         </div>
                     </div>
