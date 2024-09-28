@@ -74,11 +74,6 @@ export const Skills = () => {
                                     <progress value="45" max="100"></progress>
                                 </div>
                                 <div className="item">
-                                    <img className='skill-image' src={"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png"} alt="skill-logo" />
-                                    <h5>Bootstrap</h5>
-                                    <progress value="60" max="100"></progress>
-                                </div>
-                                <div className="item">
                                     <img className='skill-image' src={"https://cdn.cdnlogo.com/logos/g/55/github.svg"} alt="skill-logo" />
                                     <h5>Github</h5>
                                     <progress value="50" max="100"></progress>
