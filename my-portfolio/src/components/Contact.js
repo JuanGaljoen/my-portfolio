@@ -11,7 +11,7 @@ export const Contact = () => {
     emailjs
       .sendForm(
         `${REACT_APP_SERVICE_ID}`,
-        `${REACT_APP_TEMPLATE_ID}`, // Template ID
+        `${REACT_APP_TEMPLATE_ID}`,
         form.current, // Form element to submit
         `${REACT_APP_USER_ID}` // User ID (optional)
       )
