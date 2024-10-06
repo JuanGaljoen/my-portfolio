@@ -12,7 +12,8 @@ export const Contact = () => {
       .sendForm(
         `${REACT_APP_SERVICE_ID}`,
         `${REACT_APP_TEMPLATE_ID}`,
-        form.current, // Form element to submit
+        form.current, // Form element to submi
+
         `${REACT_APP_USER_ID}` // User ID (optional)
       )
       .then(
