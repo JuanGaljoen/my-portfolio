@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect } from 'react';
-import { Banner } from './components/Banner';
+import { Home } from './components/Home';
 import NavBar from './components/Navbar';
 import { Skills } from './components/Skills';
 import { Projects } from "./components/Projects"
@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Banner />
+      <Home />
       <Skills />
       <Projects />
       <About />
