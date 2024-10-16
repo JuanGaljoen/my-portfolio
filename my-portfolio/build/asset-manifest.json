@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.df4363cd.css",
+    "main.js": "/static/js/main.e50e30bd.js",
+    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "static/media/mePic.jpg": "/static/media/mePic.5a3c692664466c5e4ab4.jpg",
+    "static/media/Juan_Viljoen_resume.pdf": "/static/media/Juan_Viljoen_resume.41767f7c8553184f4312.pdf",
+    "static/media/WebDev.png": "/static/media/WebDev.6d9e84b7283ed5d4d10f.png",
+    "static/media/AWSCCP.pdf": "/static/media/AWSCCP.e5e06733bc97e7e04743.pdf",
+    "static/media/vamilling.png": "/static/media/vamilling.7bf2c37730a85e3178f3.png",
+    "index.html": "/index.html",
+    "main.df4363cd.css.map": "/static/css/main.df4363cd.css.map",
+    "main.e50e30bd.js.map": "/static/js/main.e50e30bd.js.map",
+    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df4363cd.css",
+    "static/js/main.e50e30bd.js"
+  ]
+}
