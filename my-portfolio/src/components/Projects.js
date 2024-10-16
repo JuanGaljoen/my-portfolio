@@ -1,165 +1,30 @@
-// import cartPic from "../assets/images/cart.jpg"
-// import memoryPic from "../assets/images/memory.jpg"
-// import portfolioPic from "../assets/images/resume.jpg"
-// import todoPic from "../assets/images/todo.jpg"
-// import inventoryPic from "../assets/images/inventory.jpg"
-// import carsPic from "../assets/images/cars.jpg"
-// import { Container, Row, Col, Tab } from "react-bootstrap";
-// import { ProjectCard } from "./ProjectCard";
-// import TrackVisibility from 'react-on-screen';
-// import 'animate.css';
+import React from 'react';
+import fenLogo from '../assets/images/fenergo.jpg'
+import vaLogo from '../assets/images/vamilling.png'
 
-// export const Projects = () => {
-//   const projects = [
-//     {
-//       title: "AWS Cloud Resume",
-//       description: "This portfolio is bootstrapped with React and hosted on AWS using S3, Cloudfront, Route53, Lambda, API Gateway, and DynamoDB. CI/CD is set up with Github Actions for the frontend and Terraform for the backend.",
-//       imgUrl: portfolioPic,
-//       link: "https://github.com/JuanGaljoen/cloud-resume/blob/main/my-portfolio/README.md"
-//     },
-//     {
-//       title: "Memory game",
-//       description: "The React-based match card game is a fun and interactive game that challenges users to match pairs of cards. The game features a deck of cards with different images, and the user's objective is to match all the cards in the shortest time possible.",
-//       imgUrl: memoryPic,
-//       link: "https://memory-app-ten.vercel.app/"
-//     },
-//     {
-//       title: "e-commerce cart",
-//       description: "Vanilla JavaScript shopping cart, web-based application that allows users to select items from an online store, add them to a shopping cart, and proceed to checkout where you can choose delivery and add a promo code. The shopping cart is designed using HTML, CSS, and JavaScript.",
-//       imgUrl: cartPic,
-//       link: "https://github.com/JuanGaljoen/e-commerce-Shopping-cart"
-//     },
-//     {
-//       title: "Cars Manager",
-//       description: "This application includes both the frontend created with ReactJS and the backend part created with ExpressJS and the database setup with MongoDB. The data interacts with the DB using CRUD operations.",
-//       imgUrl: carsPic,
-//       link: "https://github.com/JuanGaljoen/car-manager#readme"
-//     },
-//     {
-//       title: "Todo app (Full Stack)",
-//       description: "The MERN stack to-do app enables users to create an account, add to-do items, and edit or delete them later. The app features secure authentication, options to mark tasks as complete or pending, and an intuitive user interface. It is a powerful and efficient solution for managing tasks.",
-//       imgUrl: todoPic,
-//       link: "https://github.com/JuanGaljoen/mern-todo"
-//     },
-//     {
-//       title: "Inventory manager (Full stack MERN application)",
-//       description: "The inventory management app built using the MERN stack has admin and end-user features, uses JWT authentication, and is designed for businesses to manage their inventory efficiently and securely. The app allows admins to manage products, orders, shipments, and user access levels. End-users can browse products, add to cart, track orders, and view order history.",
-//       imgUrl: inventoryPic,
-//       link: "https://github.com/JuanGaljoen/inventory"
-//     },
-//   ];
 
-//   return (
-//     <Container className="project" id="projects" >
-//       <Row>
-//         <Col size={12}>
-//           <TrackVisibility>
-//             {({ isVisible }) =>
-//               <div className={isVisible ? "fadeIn" : ""}>
-//                 <h2>Projects</h2>
-//                 <p>Here are a couple of projects I have worked on thus far.</p>
-//                 <Tab.Content className={isVisible ? "slideInUp" : ""}>
-//                   <Tab.Pane eventKey="first">
-//                     <Row>
-//                       {projects.map((project, index) => (
-//                         <Col xs={12} sm={6} md={4} lg={3} xl={3} key={index}>
-//                           <ProjectCard {...project} />
-//                         </Col>
-//                       ))}
-//                     </Row>
-//                   </Tab.Pane>
-//                 </Tab.Content>
-//               </div>}
-//           </TrackVisibility>
-//         </Col>
-//       </Row>
-//     </Container>
-//   )
-// }
+const projects = [
+  { id: 3, name: 'VA Milling Console', description: 'Developed a comprehensive business management system tailored for Agri-Manufacturing for our client, VA-Milling. It streamlines key operations including accounting, sales, production, and logistics. The system integrates with the Quickbooks API for seamless accounting processes. The backend is built in Rust and the frontend in Flutter', image: vaLogo },
+  { id: 1, name: 'Fen-X External Data Adapter', description: 'Developed an external data adapter for Fen-X to intergrate Dunn and Bradstreets Direct+ API. Utilized .NET and AWS technologies to enable a seamless data exhange. We used Pulumi for IaC   ', image: fenLogo },
+  { id: 2, name: 'Fen-X UI Project', description: 'Contributed to a Fenergo UI team where we worked on the core product, Fen-X, where we added new features to the user interface. Leveraged React and TypeScript', image: fenLogo },
+];
 
-import React, { useState, useEffect } from 'react';
-import cartPic from "../assets/images/cart.jpg";
-import memoryPic from "../assets/images/memory.jpg";
-import portfolioPic from "../assets/images/resume.jpg";
-import todoPic from "../assets/images/todo.jpg";
-import inventoryPic from "../assets/images/inventory.jpg";
-import carsPic from "../assets/images/cars.jpg";
-import { Container, Row, Col, Tab } from "react-bootstrap";
-import { ProjectCard } from "./ProjectCard";
-import TrackVisibility from 'react-on-screen';
-import 'animate.css';
-
-export const Projects = () => {
-  const [isVisible, setIsVisible] = useState(false);
-  const projects = [
-    {
-      title: "AWS Cloud Resume",
-      description: "This portfolio is bootstrapped with React and hosted on AWS using S3, Cloudfront, Route53, Lambda, API Gateway, and DynamoDB. CI/CD is set up with Github Actions for the frontend and Terraform for the backend.",
-      imgUrl: portfolioPic,
-      link: "https://github.com/JuanGaljoen/cloud-resume/blob/main/my-portfolio/README.md"
-    },
-    {
-      title: "Memory game",
-      description: "The React-based match card game is a fun and interactive game that challenges users to match pairs of cards. The game features a deck of cards with different images, and the user's objective is to match all the cards in the shortest time possible.",
-      imgUrl: memoryPic,
-      link: "https://memory-app-ten.vercel.app/"
-    },
-    {
-      title: "e-commerce cart",
-      description: "Vanilla JavaScript shopping cart, web-based application that allows users to select items from an online store, add them to a shopping cart, and proceed to checkout where you can choose delivery and add a promo code. The shopping cart is designed using HTML, CSS, and JavaScript.",
-      imgUrl: cartPic,
-      link: "https://github.com/JuanGaljoen/e-commerce-Shopping-cart"
-    },
-    {
-      title: "Cars Manager",
-      description: "This application includes both the frontend created with ReactJS and the backend part created with ExpressJS and the database setup with MongoDB. The data interacts with the DB using CRUD operations.",
-      imgUrl: carsPic,
-      link: "https://github.com/JuanGaljoen/car-manager#readme"
-    },
-    {
-      title: "Todo app (Full Stack)",
-      description: "The MERN stack to-do app enables users to create an account, add to-do items, and edit or delete them later. The app features secure authentication, options to mark tasks as complete or pending, and an intuitive user interface. It is a powerful and efficient solution for managing tasks.",
-      imgUrl: todoPic,
-      link: "https://github.com/JuanGaljoen/mern-todo"
-    },
-    {
-      title: "Inventory manager (Full stack MERN application)",
-      description: "The inventory management app built using the MERN stack has admin and end-user features, uses JWT authentication, and is designed for businesses to manage their inventory efficiently and securely. The app allows admins to manage products, orders, shipments, and user access levels. End-users can browse products, add to cart, track orders, and view order history.",
-      imgUrl: inventoryPic,
-      link: "https://github.com/JuanGaljoen/inventory"
-    },
-  ];
-
-  useEffect(() => {
-    const handleVisibility = (visible) => setIsVisible(visible);
-    return () => handleVisibility(false);
-  }, []);
+export const Projects = ({ project }) => {
 
   return (
-    <Container className="project" id="projects" >
-      <Row>
-        <Col size={12}>
-          <TrackVisibility>
-            {({ isVisible }) =>
-              <div className={isVisible ? "fadeIn" : ""}>
-                <h2>Projects</h2>
-                <p>Here are a couple of projects I have worked on thus far.</p>
-                <Tab.Content className={isVisible ? "slideInUp" : ""}>
-                  <Tab.Pane eventKey="first">
-                    <Row>
-                      {projects.map((project, index) => (
-                        <Col xs={12} sm={6} md={4} lg={3} xl={3} key={index}>
-                          <ProjectCard {...project} />
-                        </Col>
-                      ))}
-                    </Row>
-                  </Tab.Pane>
-                </Tab.Content>
-              </div>
-            }
-          </TrackVisibility>
-        </Col>
-      </Row>
-    </Container>
-  )
-}
+    <div id="projects-section">
+      <h2 className="projects-title">Projects</h2>
+      <div className="projects-container">
+        {projects.map((project) => (
+          <div key={project.id} className="project-card">
+            <img src={project.image} alt={project.name} className="project-image" />
+            <div className="project-overlay">
+              <h3 className="project-title">{project.name}</h3>
+              <p className="project-description">{project.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
