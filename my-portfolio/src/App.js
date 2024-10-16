@@ -1,11 +1,12 @@
 import './App.css';
 import { useEffect } from 'react';
 import { Home } from './components/Home';
-import NavBar from './components/Navbar';
 import { Skills } from './components/Skills';
 import { Projects } from "./components/Projects"
 import { About } from './components/About';
 import { Contact } from './components/Contact';
+import { Experience } from './components/Experience';
+import { Certificates } from './components/Certificates';
 import { Footer } from './components/Footer';
 
 function App() {
@@ -14,13 +15,15 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <NavBar />
+      {/* <NavBar /> */}
       <Home />
-      <Skills />
-      <Projects />
       <About />
-      <Contact />
-      {/* TODO: fix counter in Footer */}
+
+      <Skills />
+      <Certificates />
+      <Projects />
+      <Experience />
+      <Footer />
     </div>
   );
 }
