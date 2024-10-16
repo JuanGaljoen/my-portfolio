@@ -1,25 +1,22 @@
-import React, { useEffect, useState } from 'react';
-
-const { REACT_APP_API_URL } = process.env
+import React from "react";
+import { Icon } from '@iconify/react';
 
 export const Footer = () => {
-  const [views, setViews] = useState(0);
-
-  useEffect(() => {
-    fetch(`${REACT_APP_API_URL}`,
-      { method: 'GET' })
-      .then(response => response.json())
-      .then(data => setViews(data));
-  }, []);
-
-  return (
-    <div>
-      <i class="fa fa-user medium-icon"></i>
-      <span class="counter-title"> Visitor count </span>
-      <span class="timer counter alt-font appear" data-to={views} data-speed="7000">{views}</span>
-    </div>
-
-  );
+    return (
+        <footer>
+            <div className="col-md-12">
+                <div className="social-links">
+                    <a href="https://www.linkedin.com/in/juan-viljoen-409895245/" target="_blank" rel="noopener noreferrer">
+                        <Icon icon="mdi:linkedin" className="social-icon" />
+                    </a>
+                    <a href="https://github.com/JuanGaljoen" target="_blank" rel="noopener noreferrer">
+                        <Icon icon="mdi:github" className="social-icon" />
+                    </a>
+                </div>
+                <div className="copyright py-4 text-center">
+                    Copyright © Juan Viljoen
+                </div>
+            </div>
+        </footer>
+    );
 };
-
-
