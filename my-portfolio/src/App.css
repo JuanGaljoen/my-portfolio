@@ -241,6 +241,7 @@ body {
 }
 
 /*Projects*/
+
 #projects-section {
   background-color: #1F1F1F;
   padding: 60px 20px;
@@ -262,12 +263,11 @@ body {
 
 .projects-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 80px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-
 }
 
 .project-card {
@@ -277,7 +277,6 @@ body {
   aspect-ratio: 1 / 1;
   background-color: rgba(248, 245, 244, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 60px;
 }
 
 .project-image {
@@ -285,7 +284,6 @@ body {
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
-
 }
 
 .project-overlay {
@@ -329,12 +327,45 @@ body {
 }
 
 @media (max-width: 768px) {
+  #projects-section {
+    padding: 40px 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .projects-title {
+    font-size: 1.75rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
   .projects-container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .project-card {
+    aspect-ratio: auto;
+    height: auto;
+    /* padding: 5px 5px; */
+
+  }
+
+  .project-image {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  .project-overlay {
+    position: static;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
   }
 
   .project-title {
-    font-size: 1.2rem;
+    font-size: 2.1rem;
   }
 
   .project-description {
@@ -343,16 +374,24 @@ body {
 }
 
 @media (max-width: 480px) {
-  .projects-section {
-    padding: 40px 20px;
+  #projects-section {
+    padding: 30px 10px;
   }
 
-  .section-title {
-    font-size: 1.5rem;
+  .projects-title {
+    font-size: 2.1rem;
   }
 
   .projects-container {
-    grid-template-columns: rep
+    gap: 30px;
+  }
+
+  .project-title {
+    font-size: 1rem;
+  }
+
+  .project-description {
+    font-size: 0.8rem;
   }
 }
 
