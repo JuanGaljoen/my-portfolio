@@ -61,7 +61,7 @@ export const Experience = () => {
       company: "Self Employed",
       years: "Oct 2014 - 2023",
       mainTech: [],
-      technologies: ["Designing original custom engagement rings and other jewelllery in compliance with high company standards, ", "Communicating with customers to ensure that their requirements were fully met"],
+      technologies: ["Designing original custom engagement rings and other jewelllery in compliance with high company standards, ", "Communicating with customers to ensure that their requirements were fully met. ", "Assisting customers in selection of jewellery and providing beneficial advice and support. ", "Maintaining a loyal customer base."],
     },
   ];
 
