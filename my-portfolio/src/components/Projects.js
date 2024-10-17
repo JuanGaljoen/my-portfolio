@@ -13,7 +13,7 @@ export const Projects = ({ project }) => {
 
   return (
     <div id="projects-section">
-      <h2 className="projects-title">Projects</h2>
+      <h2 className="section-title">Projects</h2>
       <div className="projects-container">
         {projects.map((project) => (
           <div key={project.id} className="project-card">
