@@ -90,23 +90,17 @@ body {
 
 .header-icon {
   font-size: 200px;
-  /* Adjust icon size as needed */
   margin-bottom: 10px;
-  /* Space below the icon */
 }
 
 .name-heading {
   font-size: 48px;
-  /* Adjust font size as needed */
   margin-bottom: 10px;
-  /* Space below the name */
 }
 
 .wrap {
   font-size: 24px;
-  /* Adjust font size as needed */
   color: white;
-  /* Optional: Change text color */
 }
 
 /************ Skills Css ************/
