@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "my-portfolio", "my-portfolio", "{232DAD6F-5877-4510-BF09-7541259ECB78}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lambda", "lambda", "{5B238531-7E60-44B7-8A36-4D3A69392C28}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{08039FE3-B8FB-4230-B3BC-FA52DDA6F5CB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrafficCounter.Tests", "my-portfolio\lambda\test\TrafficCounter.Tests\TrafficCounter.Tests.csproj", "{DC3CF600-0178-4CCF-8887-1A297A3FB5CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{94466A44-993D-473F-8A8C-7B562BA5CB0B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrafficCounter", "my-portfolio\lambda\src\TrafficCounter\TrafficCounter.csproj", "{C5D0A2C5-EB14-4BB9-947A-184F876F0C64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC3CF600-0178-4CCF-8887-1A297A3FB5CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC3CF600-0178-4CCF-8887-1A297A3FB5CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC3CF600-0178-4CCF-8887-1A297A3FB5CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC3CF600-0178-4CCF-8887-1A297A3FB5CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5D0A2C5-EB14-4BB9-947A-184F876F0C64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5D0A2C5-EB14-4BB9-947A-184F876F0C64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D0A2C5-EB14-4BB9-947A-184F876F0C64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5D0A2C5-EB14-4BB9-947A-184F876F0C64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5B238531-7E60-44B7-8A36-4D3A69392C28} = {232DAD6F-5877-4510-BF09-7541259ECB78}
+		{08039FE3-B8FB-4230-B3BC-FA52DDA6F5CB} = {5B238531-7E60-44B7-8A36-4D3A69392C28}
+		{DC3CF600-0178-4CCF-8887-1A297A3FB5CD} = {08039FE3-B8FB-4230-B3BC-FA52DDA6F5CB}
+		{94466A44-993D-473F-8A8C-7B562BA5CB0B} = {5B238531-7E60-44B7-8A36-4D3A69392C28}
+		{C5D0A2C5-EB14-4BB9-947A-184F876F0C64} = {94466A44-993D-473F-8A8C-7B562BA5CB0B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {428EED14-9541-4B8A-A801-A19BD34AEE2F}
+	EndGlobalSection
+EndGlobal

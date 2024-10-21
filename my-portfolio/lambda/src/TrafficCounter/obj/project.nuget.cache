@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WWANJMFsyyQ=",
+  "dgSpecHash": "i83+mEIR7WI=",
   "success": true,
-  "projectFilePath": "/Users/juanviljoen/Source/cloud-resume/my-portfolio/lambda/TrafficCounter/src/TrafficCounter/TrafficCounter.csproj",
+  "projectFilePath": "/Users/juanviljoen/Source/cloud-resume/my-portfolio/lambda/src/TrafficCounter/TrafficCounter.csproj",
   "expectedPackageFiles": [
     "/Users/juanviljoen/.nuget/packages/amazon.lambda.apigatewayevents/2.7.1/amazon.lambda.apigatewayevents.2.7.1.nupkg.sha512",
     "/Users/juanviljoen/.nuget/packages/amazon.lambda.core/2.3.0/amazon.lambda.core.2.3.0.nupkg.sha512",
