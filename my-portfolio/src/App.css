@@ -88,35 +88,41 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-  nav.navbar {
-    height: 125px;
-
-
-  }
+.header-icon {
+  font-size: 200px;
+  margin-bottom: 10px;
 }
 
-@media only screen and (max-width: 768px) {
-  nav.navbar .navbar-nav .nav-link.navbar-link {
-    display: flex;
+.name-heading {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
 
-  }
+.wrap {
+  font-size: 24px;
+  color: white;
+}
+
+.visitor-count {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 13px;
+  font-weight: 150;
+  z-index: 1000;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 
-@media only screen and (max-width: 480px) {
-  nav.navbar {
-    height: 130px;
-  }
-}
+/************ Skills Css ************/
 
-nav.navbar.scrolled {
-  padding: 18px 0;
-  background-color: #121212;
-}
-
-nav.navbar a.navbar-brand {
-  width: 9%;
+#skills {
+  margin-top: 60px;
+  background-color: #1F1F1F;
+  padding: 60px 20px;
 }
 
 .skills-container {
