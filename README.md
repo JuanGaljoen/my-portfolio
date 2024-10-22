@@ -1,61 +1,56 @@
-Portfolio Readme
+Welcome to My Portfolio
 
-Welcome to my portfolio! This site is hosted at https://juanviljoen.com and showcases my skills, projects, and experiences. The frontend of the portfolio was built using React. Below is an overview of the technologies used in this project:
+This site, hosted at juanviljoen.com, showcases my skills, projects, and experiences. The frontend was built using React. Below is an overview of the technologies used in this project:
 
 ![resumeFlow](https://github.com/JuanBiljoen/cloud-resume/assets/111522309/8dbb948f-9797-438a-aaa9-e498057f8db1)
 
 Technologies and Services Used
--AWS S3 (Simple Storage Service):
-Used to store the static files, including HTML, CSS, JavaScript, and images that make up the frontend of the portfolio.
 
--AWS CloudFront:
+AWS Services
 
-Used as a content delivery network (CDN) to serve the portfolio's static content globally with low latency and high performance.
+AWS S3 (Simple Storage Service):
+Used to store static files, including HTML, CSS, JavaScript, and images for the portfolio.
 
--AWS Certificate Manager:
+AWS CloudFront:
+Serves as a content delivery network (CDN) to deliver the portfolio's static content globally with low latency and high performance.
 
-Used to manage SSL/TLS certificates to ensure secure communication between clients and CloudFront.
+AWS Certificate Manager:
+Manages SSL/TLS certificates for secure communication between clients and CloudFront.
 
--AWS Lambda:
+AWS Lambda:
+Utilized for serverless computing to run the code that tracks visitor counts.
 
-Utilized for serverless compute to run the code that adds a view to the visitor count.
+API Gateway:
+Enhances the portfolio with dynamic functionalities, enabling interaction with the AWS Lambda function to update the visitor count.
 
--API Gateway: 
+DynamoDB:
+A NoSQL database used to store the visitor count.
 
-To enhance the portfolio with dynamic functionalities and enable serverless compute, an API Gateway is used. It allows interaction with the AWS Lambda function to add to the visitor count dynamically.
+CI/CD
+GitHub Actions:
+Automates the build and deployment process whenever changes are pushed to the main branch.
 
--DynamoDB:
+Infrastructure as Code
+Terraform:
+Used to define and provision the AWS resources required for the visitor counter.
 
-Utilized as a NoSQL database for storing visitor count.
-
--GitHub Actions:
-Used to automate the build and deployment process of the portfolio whenever changes are pushed to the main branch.
-
- <! --- in progress ---> -Terraform:
- 
-Used for infrastructure as code (IAC) to define and provision the AWS resources required for hosting the portfolio.
 Deployment Process
-The deployment process for this portfolio is automated using GitHub Actions. Whenever changes are pushed to the main branch, the following steps are performed:
+The deployment process for this portfolio is automated using GitHub Actions. When changes are pushed to the main branch, the following steps are executed:
 
--Build Frontend:
-
+Build Frontend:
 The React frontend is built, optimized, and prepared for deployment.
 
- <! --- In progress ---> 
--Terraform Deployment:
-
+Terraform Deployment:
 Terraform scripts are executed to provision or update the necessary AWS resources, including S3 buckets, CloudFront distribution, Lambda functions, and DynamoDB tables.
 
--Secure Communication:
+Secure Communication:
+SSL/TLS certificates are managed using AWS Certificate Manager to ensure secure communication between clients and the CloudFront distribution.
 
-SSL/TLS certificates are managed using AWS Certificate Manager, ensuring secure communication between clients and the CloudFront distribution.
-
--Global Distribution:
-
-CloudFront is configured to distribute the static content of the portfolio to edge locations worldwide, reducing latency for users.
+Global Distribution:
+CloudFront is configured to distribute the portfolio's static content to edge locations worldwide, reducing latency for users.
 
 Feedback and Contact
+I welcome any feedback or suggestions for improvements to my portfolio. If you have any questions or would like to get in touch, please reach out via the contact form on my portfolio.
 
-I welcome any feedback or suggestions for improvements to my portfolio. If you have any questions or would like to get in touch with me, feel free to reach out via the contact form on my portfolio.
+Thank you for visiting! I hope you find it informative and enjoyable.
 
-Thank you for visiting my portfolio! I hope you find it informative and enjoyable.
