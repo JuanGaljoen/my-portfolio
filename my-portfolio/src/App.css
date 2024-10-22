@@ -88,27 +88,35 @@ body {
   text-align: center;
 }
 
-.header-icon {
-  font-size: 200px;
-  margin-bottom: 10px;
+@media only screen and (max-width: 768px) {
+  nav.navbar {
+    height: 125px;
+
+
+  }
 }
 
-.name-heading {
-  font-size: 48px;
-  margin-bottom: 10px;
+@media only screen and (max-width: 768px) {
+  nav.navbar .navbar-nav .nav-link.navbar-link {
+    display: flex;
+
+  }
 }
 
-.wrap {
-  font-size: 24px;
-  color: white;
+
+@media only screen and (max-width: 480px) {
+  nav.navbar {
+    height: 130px;
+  }
 }
 
-/************ Skills Css ************/
+nav.navbar.scrolled {
+  padding: 18px 0;
+  background-color: #121212;
+}
 
-#skills {
-  margin-top: 60px;
-  background-color: #1F1F1F;
-  padding: 60px 20px;
+nav.navbar a.navbar-brand {
+  width: 9%;
 }
 
 .skills-container {

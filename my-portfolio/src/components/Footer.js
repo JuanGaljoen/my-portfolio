@@ -1,5 +1,6 @@
-import React from "react";
+
 import { Icon } from '@iconify/react';
+const apiUrl = process.env.REACT_APP_API_URL;
 
 export const Footer = () => {
     return (
