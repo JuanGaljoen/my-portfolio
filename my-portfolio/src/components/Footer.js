@@ -1,5 +1,6 @@
-import React from "react";
+
 import { Icon } from '@iconify/react';
+const apiUrl = process.env.REACT_APP_API_URL;
 
 export const Footer = () => {
     return (
@@ -13,6 +14,7 @@ export const Footer = () => {
                         <Icon icon="mdi:github" className="social-icon" />
                     </a>
                 </div>
+
                 <div className="copyright py-4 text-center">
                     Copyright © Juan Viljoen
                 </div>
@@ -20,3 +22,4 @@ export const Footer = () => {
         </footer>
     );
 };
+
