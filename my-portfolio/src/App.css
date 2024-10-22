@@ -103,6 +103,20 @@ body {
   color: white;
 }
 
+.visitor-count {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 13px;
+  font-weight: 150;
+  z-index: 1000;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+
 /************ Skills Css ************/
 
 #skills {
