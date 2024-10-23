@@ -10,7 +10,7 @@ import { Experience } from './components/Experience';
 
 function App() {
   useEffect(() => {
-    document.title = "Juan's Portfolio";
+    document.title = "Juan Viljoen";
   }, []);
   return (
     <div className="App">

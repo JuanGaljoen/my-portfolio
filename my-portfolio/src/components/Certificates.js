@@ -7,8 +7,8 @@ export const Certificates = () => {
     const sectionName = "Certificates";
 
     const certs = [
-        { name: "AWS Cloud Practitioner", icon: "mdi:aws", link: awsCert },  // PDF link
-        { name: "Full Stack Web Development", icon: "ant-design:code-outlined", link: webCert },  // Image link
+        { name: "AWS Cloud Practitioner", icon: "mdi:aws", link: awsCert },
+        { name: "Full Stack Web Development", icon: "ant-design:code-outlined", link: webCert },
     ];
 
     return (

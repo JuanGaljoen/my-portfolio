@@ -13,7 +13,7 @@ export const Home = () => {
             try {
                 const response = await fetch(apiUrl);
                 const data = await response.json();
-                setVisitorCount(data.count); // Adjust this depending on the structure of your response
+                setVisitorCount(data.count);
             } catch (error) {
                 console.error('Error fetching visitor count:', error);
             }

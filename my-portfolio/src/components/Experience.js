@@ -5,19 +5,16 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
-import { Icon } from "@iconify/react"; // Import Iconify for icons
+import { Icon } from "@iconify/react";
 
 export const Experience = () => {
-  // Hardcoded section name
   const sectionName = "Work Experience";
-
-  // Array of hardcoded work experiences
   const experiences = [
     {
       title: "Junior Software Engineer",
       company: "Culture Systems",
       date: "Jul 2024 - Present",
-      icon: "mdi:language-rust", // Rust icon
+      icon: "mdi:language-rust",
       backgroundColor: "#404040",
       badges: ["Agri-Manufacturing", "Flutter, ", "Rust"],
     },
@@ -33,7 +30,7 @@ export const Experience = () => {
       title: "Jewellery Designer",
       company: "Self Employed",
       date: "Oct 2014 - 2023",
-      icon: "mdi:diamond", // Jewellery icon
+      icon: "mdi:diamond",
       backgroundColor: "#404040",
       badges: [
         "Design",
@@ -92,14 +89,13 @@ export const Experience = () => {
             </VerticalTimelineElement>
           ))}
 
-          {/* Final element */}
           <VerticalTimelineElement
             iconStyle={{
-              backgroundColor: "grey",
-              color: "#fff",
+              background: "grey",
+              color: "white",
               textAlign: "center",
             }}
-            icon={<i className="fas fa-hourglass-start mx-auto experience-icon" color="black"></i>}
+            icon={<Icon icon="mdi:hourglass" style={{ fontSize: '40px', color: 'black' }} />}
           />
         </VerticalTimeline>
       </div>
