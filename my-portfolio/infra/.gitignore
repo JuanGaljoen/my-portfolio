@@ -1,5 +1,0 @@
-# Ignore Terraform files
-my-portfolio/infra/.terraform.lock.hcl
-my-portfolio/infra/terraform.tfstate
-my-portfolio/infra/terraform.tfstate.backup
-my-portfolio/infra/.terraform/

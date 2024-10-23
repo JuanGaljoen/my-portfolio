@@ -2,8 +2,6 @@ Welcome to My Portfolio
 
 This site, hosted at juanviljoen.com, showcases my skills, projects, and experiences. The frontend was built using React. Below is an overview of the technologies used in this project:
 
-![resumeFlow](https://github.com/JuanBiljoen/cloud-resume/assets/111522309/8dbb948f-9797-438a-aaa9-e498057f8db1)
-
 Technologies and Services Used
 
 AWS Services
