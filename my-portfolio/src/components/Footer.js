@@ -12,8 +12,10 @@ export const Footer = () => {
                     <a href="https://github.com/JuanGaljoen" target="_blank" rel="noopener noreferrer">
                         <Icon icon="mdi:github" className="social-icon" />
                     </a>
+                    <a href="mailto:juangaljoen@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <Icon icon="mdi:email" className="social-icon" />
+                    </a>
                 </div>
-
                 <div className="copyright py-4 text-center">
                     Copyright © Juan Viljoen
                 </div>
