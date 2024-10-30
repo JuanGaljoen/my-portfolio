@@ -91,11 +91,11 @@ export const Experience = () => {
 
           <VerticalTimelineElement
             iconStyle={{
-              background: "grey",
+              background: "#404040",
               color: "white",
               textAlign: "center",
             }}
-            icon={<Icon icon="mdi:hourglass" style={{ fontSize: '40px', color: 'black' }} />}
+            icon={<Icon icon="mdi:hourglass" style={{ fontSize: '40px', color: 'white' }} />}
           />
         </VerticalTimeline>
       </div>

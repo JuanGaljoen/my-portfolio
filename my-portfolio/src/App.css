@@ -116,6 +116,25 @@ body {
   letter-spacing: 3px;
 }
 
+.resume-button {
+  background-color: grey;
+  padding: 5px;
+  border-radius: 8px;
+  cursor: grab;
+  transition-duration: 0.9s;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.resume-button:hover {
+  background-color: rgb(249, 105, 14);
+  color: white;
+}
 
 /************ Skills Css ************/
 
@@ -511,23 +530,6 @@ body {
   .me-pic {
     width: 500px;
   }
-}
-
-.resume-button {
-  background-color: grey;
-  height: 25px;
-  width: 30%;
-  border-radius: 8px;
-  color: black;
-  cursor: grab;
-  transition-duration: 0.4s;
-  margin-top: 15px;
-  padding: 5px;
-}
-
-.resume-button:hover {
-  background-color: rgb(249, 105, 14);
-  color: white;
 }
 
 @keyframes updown {
