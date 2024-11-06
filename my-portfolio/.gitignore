@@ -25,7 +25,7 @@ yarn-error.log*
 /lambda/.serverless
 /lambda/build
 
-# Terraform-related files (if using Terraform)
+# Terraform-related files
 /infra/.terraform/
 /infra/*.tfstate
 /infra/*.tfstate.backup
