@@ -11,10 +11,10 @@ export const Skills = () => {
         { name: "TypeScript", icon: "mdi:language-typescript" },
         { name: "JavaScript", icon: "mdi:language-javascript" },
         { name: "Flutter", icon: "mdi:alpha-f" },
-        { name: "Bootstrap", icon: "mdi:bootstrap" },
         { name: "C#", icon: "mdi:language-csharp" },
-        { name: "MySql", icon: "mdi:database" },
         { name: "Rust", icon: "mdi:language-rust" },
+        { name: "MySql", icon: "mdi:database" },
+        { name: "AWS", icon: "mdi:aws" },
     ];
 
     return (
