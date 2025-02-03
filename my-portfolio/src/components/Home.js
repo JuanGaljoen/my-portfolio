@@ -62,9 +62,6 @@ export const Home = () => {
             <div className="visitor-count">
                 Visitors: {visitorCount}
             </div>
-            <a className="resume-button" href={resume} target="_blank" rel="noreferrer">
-                view resume
-            </a>
         </div>
     );
 }
