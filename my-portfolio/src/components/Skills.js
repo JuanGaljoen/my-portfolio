@@ -5,16 +5,17 @@ export const Skills = () => {
     const sectionName = "Skills";
 
     const skills = [
-        { name: "HTML 5", icon: "mdi:language-html5" },
-        { name: "CSS 3", icon: "mdi:language-css3" },
-        { name: "React", icon: "mdi:react" },
-        { name: "TypeScript", icon: "mdi:language-typescript" },
-        { name: "JavaScript", icon: "mdi:language-javascript" },
-        { name: "Flutter", icon: "mdi:alpha-f" },
         { name: "C#", icon: "mdi:language-csharp" },
         { name: "Rust", icon: "mdi:language-rust" },
+        { name: "TypeScript", icon: "mdi:language-typescript" },
+        { name: "JavaScript", icon: "mdi:language-javascript" },
+        { name: "React", icon: "mdi:react" },
+        { name: "Flutter", icon: "mdi:alpha-f" },
         { name: "MySql", icon: "mdi:database" },
         { name: "AWS", icon: "mdi:aws" },
+        { name: "Tailwind", icon: "mdi:tailwind" },
+        { name: "HTML 5", icon: "mdi:language-html5" },
+        { name: "CSS 3", icon: "mdi:language-css3" },
     ];
 
     return (
