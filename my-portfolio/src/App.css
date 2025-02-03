@@ -72,7 +72,7 @@ p.danger {
   color: red;
 }
 
-/************ Banner Css ************/
+/************ Home Css ************/
 
 html,
 body {
@@ -114,28 +114,6 @@ body {
   text-align: right;
   text-transform: uppercase;
   letter-spacing: 3px;
-}
-
-.resume-button {
-  padding: 5px;
-  border: 1px solid grey;
-  border-radius: 8px;
-  cursor: grab;
-  transition-duration: 0.9s;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: white;
-}
-
-.resume-button:hover {
-  background-color: rgb(249, 105, 14);
-  color: white;
-  border-radius: 8px;
-  padding: 5px;
 }
 
 /************ Skills Css ************/
@@ -439,7 +417,7 @@ body {
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px auto 30px auto;
+  margin: 14px auto 80px auto;
   text-align: center;
   width: 65%;
 }
@@ -463,6 +441,24 @@ body {
   /* left: -175px; */
   /* half the width */
   animation: updown 3s linear infinite;
+}
+
+.resume-button {
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  cursor: grab;
+  transition-duration: 0.9s;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: white;
+}
+
+.resume-button:hover {
+  background-color: rgb(249, 105, 14);
+  color: white;
+  border-radius: 8px;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 768px) {
