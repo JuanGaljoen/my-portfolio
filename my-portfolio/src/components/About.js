@@ -1,4 +1,3 @@
-import pic1 from "../assets/images/mePic.jpg"
 import React from "react";
 import resume from '../assets/resume/Juan_Viljoen_resume.pdf';
 
