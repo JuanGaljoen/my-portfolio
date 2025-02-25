@@ -1,5 +1,5 @@
 import React from "react";
-import resume from '../assets/resume/Juan_Viljoen_resume.pdf';
+import resume from '../../assets/resume/Juan_Viljoen_resume.pdf';
 
 export const About = () => {
     const sectionName = "About Me";

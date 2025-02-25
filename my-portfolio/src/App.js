@@ -1,12 +1,13 @@
 import './App.css';
+import { About } from './components/About/About';
+import { Certificates } from './components/Certificates/Certificates';
+import { Experience } from './components/Experience/Experience';
 import { useEffect } from 'react';
-import { Home } from './components/Home';
-import { Skills } from './components/Skills';
-import { Projects } from "./components/Projects"
-import { About } from './components/About';
-import { Footer } from './components/Footer';
-import { Certificates } from './components/Certificates';
-import { Experience } from './components/Experience';
+import { Home } from './components/Home/Home';
+import { Skills } from './components/Skills/Skills';
+import { Projects } from "./components/Projects/Projects"
+import { Footer } from './components/Footer/Footer';
+
 
 function App() {
   useEffect(() => {

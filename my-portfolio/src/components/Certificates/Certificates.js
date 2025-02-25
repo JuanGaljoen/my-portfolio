@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from '@iconify/react';
-import webCert from '../assets/certs/WebDev.png';
-import awsCert from '../assets/certs/AWSCCP.pdf';
+import webCert from '../../assets/certs/WebDev.png';
+import awsCert from '../../assets/certs/AWSCCP.pdf';
 
 export const Certificates = () => {
     const sectionName = "Certificates";

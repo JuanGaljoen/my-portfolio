@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { Container, Row, Col } from "react-bootstrap";
-import clouds from '../assets/images/clouds.mp4'
-import resume from '../assets/resume/Juan_Viljoen_resume.pdf';
+import clouds from '../../assets/images/clouds.mp4'
 
 const apiUrl = process.env.REACT_APP_API_URL;
 
