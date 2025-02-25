@@ -323,7 +323,7 @@ body {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   #projects-section {
     padding: 40px 15px;
     margin-top: 40px;
@@ -366,7 +366,7 @@ body {
   .project-description {
     font-size: 0.9rem;
   }
-} */
+}
 
 @media (max-width: 480px) {
   #projects-section {
