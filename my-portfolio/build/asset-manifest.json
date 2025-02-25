@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ce37fa7d.css",
-    "main.js": "/static/js/main.dff1879f.js",
+    "main.css": "/static/css/main.2bbb4163.css",
+    "main.js": "/static/js/main.2173a0b2.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/clouds.mp4": "/static/media/clouds.cf7bf152438a6222c9cb.mp4",
     "static/media/Juan_Viljoen_resume.pdf": "/static/media/Juan_Viljoen_resume.d0e94ed77c7d16d1923d.pdf",
@@ -9,12 +9,12 @@
     "static/media/AWSCCP.pdf": "/static/media/AWSCCP.e5e06733bc97e7e04743.pdf",
     "static/media/vamilling.png": "/static/media/vamilling.708697f50d6c00e63a05.png",
     "index.html": "/index.html",
-    "main.ce37fa7d.css.map": "/static/css/main.ce37fa7d.css.map",
-    "main.dff1879f.js.map": "/static/js/main.dff1879f.js.map",
+    "main.2bbb4163.css.map": "/static/css/main.2bbb4163.css.map",
+    "main.2173a0b2.js.map": "/static/js/main.2173a0b2.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce37fa7d.css",
-    "static/js/main.dff1879f.js"
+    "static/css/main.2bbb4163.css",
+    "static/js/main.2173a0b2.js"
   ]
 }
