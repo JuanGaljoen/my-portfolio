@@ -12,7 +12,7 @@ export const About = () => {
                     </span>
                 </h1>
                 <p>
-                    I am an enthusiastic and ambitious full-stack developer with hands-on experience in software development and a strong foundation in cloud computing. I am always eager to learn new technologies and approaches, enabling me to contribute to scalable, secure, and reliable infrastructures. I eagerly seek opportunities to collaborate with talented teams and support organizations in achieving their goals.
+                    I am a passionate full-stack developer with hands-on experience in software development and a strong foundation in cloud computing. Continuously learning new technologies, I strive to build scalable, secure, and reliable solutions. I thrive in collaborative environments and am eager to contribute to innovative teams and drive organizational success.
                     <br></br><br></br>
                     In my spare time I'm either working on an old Vespa, cycling, taking my dog for a hike/fishing trip or spending time with friends. I am very passionate about music, classic cars and motorbikes.
                 </p>
