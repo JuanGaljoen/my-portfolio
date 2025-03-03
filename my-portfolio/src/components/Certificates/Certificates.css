@@ -1,0 +1,63 @@
+#certificates {
+    background-color: #1F1F1F;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cert-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cert-tile {
+    background-color: rgba(248, 245, 244, 0.05);
+    border-radius: 6px;
+    padding: 12px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: whitesmoke;
+}
+
+.cert-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-color: rgb(249, 105, 14);
+}
+
+.cert-icon {
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+}
+
+.cert-name {
+    text-align: center;
+    font-size: 0.9rem;
+    word-break: break-word;
+}
+
+.section-title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skill-icon {
+        font-size: 2rem;
+    }
+
+    .skill-name {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,55 @@
+#experience {
+    padding-top: 60px;
+    background-color: #666;
+}
+
+.vertical-timeline-element-title {
+    font-size: 1rem;
+    color: black !important;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-top: 10px;
+}
+
+.vertical-timeline-element-subtitle {
+    font-size: 1rem;
+    color: darkslategray;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-top: 5px;
+}
+
+.vertical-timeline-element-date {
+    font-size: 1rem;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.vertical-timeline-element-content {
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.main-badge {
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background-color: #B8B8B8;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.experience-badge {
+    font-size: 1rem;
+    color: darkslategray;
+    text-align: center;
+    letter-spacing: 3px;
+    padding-top: 5px;
+
+}

@@ -6,6 +6,7 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
 import { Icon } from "@iconify/react";
+import './Experience.css'
 
 export const Experience = () => {
   const sectionName = "Work Experience";

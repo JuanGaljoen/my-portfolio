@@ -1,0 +1,36 @@
+footer {
+    background: #1F1F1F;
+    min-height: 100px;
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    color: white;
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer a,
+footer a:visited {
+    color: #fff;
+}
+
+.social-links {
+    margin-top: 50px;
+    font-size: 36px;
+    padding: 5px;
+}
+
+.social-links a {
+    margin: 0 15px;
+}
+
+.social-icon {
+    font-size: 36px;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 20px;
+}

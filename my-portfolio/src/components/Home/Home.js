@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { Container, Row, Col } from "react-bootstrap";
 import clouds from '../../assets/images/clouds.mp4'
+import './Home.css'
 
 const apiUrl = process.env.REACT_APP_API_URL;
 

@@ -1,0 +1,128 @@
+.about {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px auto 30px auto;
+    text-align: center;
+    width: 90%;
+    padding-top: 50px;
+}
+
+.about h2 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+}
+
+.about p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px auto 80px auto;
+    text-align: center;
+    width: 65%;
+}
+
+.resume-button {
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    cursor: grab;
+    transition-duration: 0.9s;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.resume-button:hover {
+    background-color: rgb(249, 105, 14);
+    color: white;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .background-about-image {
+        height: 250px;
+        width: 250px;
+        border-radius: 125px;
+        margin-left: 92%;
+        left: -125px;
+        /* half the width */
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .background-about-image {
+        display: none;
+    }
+
+    .about p {
+        width: 90%;
+    }
+
+    .me-pic {
+        width: 90%;
+    }
+
+    .name-heading {
+        font-size: larger !important;
+        max-width: 100;
+    }
+
+    nav.navbar.scrolled {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .background-about-image {
+        display: none;
+    }
+
+    .about p {
+        width: 90%;
+    }
+
+    .me-pic {
+        width: 90%;
+    }
+
+    .name-heading {
+        font-size: larger !important;
+        max-width: 100;
+    }
+
+    nav.navbar.scrolled {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .me-pic {
+        width: 150px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .me-pic {
+        width: 500px;
+    }
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}

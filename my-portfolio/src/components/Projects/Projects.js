@@ -3,6 +3,7 @@ import fenLogo from '../../assets/images/fenergo.jpg'
 import vaLogo from '../../assets/images/vamilling.png'
 import abakusLogo from '../../assets/images/abakus.png'
 import rivalLogo from '../../assets/images/rival.png'
+import './Projects.css'
 
 const projects = [
 
