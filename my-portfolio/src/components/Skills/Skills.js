@@ -15,8 +15,8 @@ export const Skills = () => {
         { name: "MySql", icon: "mdi:database" },
         { name: "AWS", icon: "mdi:aws" },
         { name: "Tailwind", icon: "mdi:tailwind" },
-        { name: "HTML 5", icon: "mdi:language-html5" },
-        { name: "CSS 3", icon: "mdi:language-css3" },
+        { name: "HTML", icon: "mdi:language-html5" },
+        { name: "CSS", icon: "mdi:language-css3" },
     ];
 
     return (
