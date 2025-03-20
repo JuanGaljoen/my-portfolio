@@ -13,6 +13,7 @@ export const Skills = () => {
         { name: "React", icon: "mdi:react" },
         { name: "Flutter", icon: "mdi:alpha-f" },
         { name: "MySql", icon: "mdi:database" },
+        { name: "Git", icon: "mdi:git" },
         { name: "AWS", icon: "mdi:aws" },
         { name: "Tailwind", icon: "mdi:tailwind" },
         { name: "HTML", icon: "mdi:language-html5" },
