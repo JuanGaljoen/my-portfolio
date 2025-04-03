@@ -7,49 +7,16 @@ import "react-vertical-timeline-component/style.min.css";
 import Badge from "react-bootstrap/Badge";
 import { Icon } from "@iconify/react";
 import './Experience.css'
+import { experiences } from "../../data/experience";
 
 export const Experience = () => {
-  const sectionName = "Work Experience";
-  const experiences = [
-    {
-      title: "Junior Software Engineer",
-      company: "Culture Systems",
-      date: "Jul 2024 - Present",
-      icon: "mdi:language-rust",
-      backgroundColor: "#404040",
-      badges: ["Agri-Manufacturing", "Flutter, ", "Rust"],
-    },
-    {
-      title: "Software Engineer Intern",
-      company: "Kaha",
-      date: "Oct 2023 - June 2024",
-      icon: "mdi:language-csharp",
-      backgroundColor: "#404040",
-      badges: ["Fintech", "C# .NET, ", "React, ", "AWS"],
-    },
-    {
-      title: "Jewellery Designer",
-      company: "Self Employed",
-      date: "Oct 2014 - 2023",
-      icon: "mdi:diamond",
-      backgroundColor: "#404040",
-      badges: [
-        "Design",
-        "Designing custom engagement rings and jewellery. ",
-        "Communicating with customers. ",
-        "Providing beneficial advice and support. ",
-        "Maintaining a loyal customer base.",
-      ],
-    },
-  ];
-
   return (
     <section id="experience" className="pb-5">
       <div className="col-md-12 mx-auto">
         <div className="col-md-12">
           <h1 className="section-title" style={{ color: "black" }}>
             <span className="text-grey" style={{ textAlign: "center" }}>
-              {sectionName}
+              Work Experience
             </span>
           </h1>
         </div>

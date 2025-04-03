@@ -7,7 +7,6 @@ import './Home.css'
 const apiUrl = process.env.REACT_APP_API_URL;
 
 export const Home = () => {
-    const sectionName = "Juan Viljoen";
     const [visitorCount, setVisitorCount] = useState(0);
 
     useEffect(() => {
@@ -40,7 +39,7 @@ export const Home = () => {
                     <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
                     <h1 className="section-title" style={{ color: "white" }}>
                         <span className="text-grey" style={{ textAlign: "center" }}>
-                            {sectionName}
+                            Juan Viljoen
                         </span>
                     </h1>
                     <TypeAnimation

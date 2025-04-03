@@ -3,13 +3,12 @@ import resume from '../../assets/resume/Juan_Viljoen_resume.pdf';
 import './About.css'
 
 export const About = () => {
-    const sectionName = "About Me";
     return (
         <div className="about-container">
             <div className="about" id="aboutme" xs={12} md={6} xl={7}>
                 <h1 className="section-title" style={{ color: "black" }}>
                     <span className="text-grey" style={{ textAlign: "center" }}>
-                        {sectionName}
+                        About me
                     </span>
                 </h1>
                 <p>
