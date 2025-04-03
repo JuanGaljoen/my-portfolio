@@ -14,8 +14,8 @@ const enterpriseProjects = [
 
 const personalProjects = [
   { id: 1, name: 'Rival Labs Quote Generator', description: 'a Form that generates a personalised quote that is sent to the user via email. Frontend: React+Tailwind. The backend runs on a Lambda function that generates HTML and mails the quote with SES. The form is embedded in their existing WordPress site.', image: rivalLogo },
-  { id: 2, name: 'This Website', description: 'Developed a comprehensive business management system tailored for Agri-Manufacturing for our client, VA-Milling. It streamlines key operations including accounting, sales, production, and logistics. The system integrates with the Quickbooks API for seamless accounting processes. The backend is built in Rust and the frontend in Flutter.', image: portfolioImg },
-  { id: 3, name: 'Crypto Tracker', description: 'This project provides a comprehensive solution for displaying real-time token data for selected cryptocurrencies.', image: cryptoLogo },
+  { id: 2, name: 'This Website', description: 'Hosted at juanviljoen.com, this site showcases my skills and projects. Built with React, it uses AWS S3 and CloudFront for fast delivery, Lambda and DynamoDB for visitor tracking, and GitHub Actions with Terraform for seamless deployment.', image: portfolioImg },
+  { id: 3, name: 'Crypto Tracker', description: 'This project delivers real-time crypto data using CoinGecko API, MongoDB Atlas for storage, and Redis for caching. Built with Next.js and TailwindCSS on the frontend, it features a TypeScript-based API server, ensuring fast performance and high concurrency.', image: cryptoLogo },
 ];
 
 
