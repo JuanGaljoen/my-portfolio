@@ -7,7 +7,16 @@ body {
   color: white !important;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
+}
+
+.section-subtitle {
+  font-weight: 100;
+  color: white !important;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  padding-bottom: 40px;
 }
 
 h1,

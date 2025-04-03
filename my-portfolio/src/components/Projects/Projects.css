@@ -13,8 +13,8 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 80px;
     max-width: 1300px;
-    width: 100%;
-    margin: 0 auto;
+    width: 80%;
+    /* margin: 0 auto; */
 }
 
 .project-card {
@@ -54,6 +54,15 @@
     font-size: 1.5rem;
     margin-bottom: 10px;
     text-align: center;
+}
+
+.enterprise-subtitle {
+    font-weight: 100;
+    color: white !important;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    padding: 60px 0 40px 0;
 }
 
 .project-description {
@@ -136,6 +145,6 @@
     }
 
     .project-description {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 }
