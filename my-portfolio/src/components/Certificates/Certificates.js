@@ -1,23 +1,15 @@
-import React from "react";
+import React from 'react';
 import { Icon } from '@iconify/react';
-import webCert from '../../assets/certs/WebDev.png';
-import awsCert from '../../assets/certs/AWSCCP.pdf';
-import './Certificates.css'
+import './Certificates.css';
+import { certs } from '../../data/certs';
 
 export const Certificates = () => {
-    const sectionName = "Certificates";
-
-    const certs = [
-        { name: "AWS Cloud Practitioner", icon: "mdi:aws", link: awsCert },
-        { name: "Full Stack Web Development", icon: "ant-design:code-outlined", link: webCert },
-    ];
-
     return (
         <section id="certificates">
-            <h2 className="section-title">{sectionName}</h2>
+            <h2 className="section-title">Certificates</h2>
             <div className="cert-container">
-                {certs.map((cert, index) => (
-                    <div key={index} className="cert-tile">
+                {certs.map((cert) => (
+                    <div key={cert.id} className="cert-tile">
                         <a href={cert.link} target="_blank" rel="noopener noreferrer" className="skill-link">
                             <Icon icon={cert.icon} className="cert-icon" />
                             <span className="cert-name">{cert.name}</span>
