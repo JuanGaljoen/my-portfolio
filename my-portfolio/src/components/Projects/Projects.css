@@ -71,6 +71,26 @@
     text-align: center;
 }
 
+/* Style for the link container */
+.github-icon {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Style specifically for the icon */
+.github-icon .iconify {
+    color: white;
+    font-size: 32px;
+}
+
+.github-icon:hover {
+    color: #f3f3f3;
+    transform: translateX(-50%) scale(1.4);
+}
+
 .project-card:hover .project-overlay,
 .project-card:focus .project-overlay,
 .project-card:active .project-overlay {
