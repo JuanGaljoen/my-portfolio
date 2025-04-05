@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { Container, Row } from "react-bootstrap";
-import clouds from '../../assets/images/clouds.mp4'
-import './Home.css'
+import clouds from '../../assets/images/clouds.mp4';
+import './Home.css';
 
 const apiUrl = process.env.REACT_APP_API_URL;
 
@@ -30,7 +30,16 @@ export const Home = () => {
                     autoPlay
                     loop
                     muted
-                    style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", objectFit: "cover", zIndex: -1 }}
+                    playsInline
+                    style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                        zIndex: -1,
+                    }}
                 >
                     <source src={clouds} type="video/mp4" />
                     Your browser does not support the video tag.

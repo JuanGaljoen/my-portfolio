@@ -4,6 +4,7 @@
      align-items: center;
      height: 100vh;
      text-align: center;
+     position: relative;
  }
 
  .header-icon {
@@ -32,4 +33,21 @@
      text-align: right;
      text-transform: uppercase;
      letter-spacing: 3px;
+ }
+
+
+ @media (max-width: 768px) {
+     .banner video {
+         display: block;
+     }
+
+     .banner {
+         background-image: none;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .banner video {
+         display: block;
+     }
  }
