@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import clouds from '../../assets/images/clouds.mp4'
 import './Home.css'
 
