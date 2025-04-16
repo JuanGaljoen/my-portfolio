@@ -1,6 +1,6 @@
 export const experiences = [
     {
-        title: "Junior Software Engineer",
+        title: "Software Engineer",
         company: "Culture Systems",
         date: "Jul 2024 - Present",
         icon: "mdi:language-rust",
