@@ -1,14 +1,22 @@
 export const experiences = [
     {
         title: "Software Engineer",
+        company: "Dynamic Build Systems",
+        date: "June 2025 - Present",
+        icon: "mdi:language-csharp",
+        backgroundColor: "#404040",
+        badges: ["Manufacturing", "C# .NET, ", "SQL"],
+    },
+    {
+        title: "Software Engineer",
         company: "Culture Systems",
-        date: "Jul 2024 - Present",
+        date: "Jul 2024 - May 2024",
         icon: "mdi:language-rust",
         backgroundColor: "#404040",
         badges: ["Agri-Manufacturing", "Flutter, ", "Rust"],
     },
     {
-        title: "Software Engineer Intern",
+        title: "Software Engineer",
         company: "Kaha",
         date: "Oct 2023 - June 2024",
         icon: "mdi:language-csharp",
