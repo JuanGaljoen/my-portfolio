@@ -10,7 +10,7 @@ export const experiences = [
     {
         title: "Software Engineer",
         company: "Culture Systems",
-        date: "Jul 2024 - May 2024",
+        date: "Jul 2024 - May 2025",
         icon: "mdi:language-rust",
         backgroundColor: "#404040",
         badges: ["Agri-Manufacturing", "Flutter, ", "Rust"],

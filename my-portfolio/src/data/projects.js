@@ -12,6 +12,6 @@ export const personalProjects = [
 
 export const enterpriseProjects = [
     { id: 1, name: 'VA Milling Console', description: 'Comprehensive business management system tailored for VA-Milling. It streamlines key operations including accounting, sales, production, and logistics. Quickbooks API integration for seamless accounting processes. The backend is built in Rust and the frontend in Flutter.', image: vaLogo },
-    { id: 2, name: 'Fen-X External Data Adapter', description: 'Developed an external data adapter for Fen-X to intergrate Dunn and Bradstreets Direct+ API. Utilized .NET and AWS technologies to enable a seamless data exhange. Implemented IaC using Pulumi. ', image: fenLogo },
+    { id: 2, name: 'Fen-X External Data Adapter', description: 'Developed an external data adapter for Fen-X to integrate Dunn and Bradstreets Direct+ API. Utilized .NET and AWS technologies to enable a seamless data exchange. Implemented IaC using Pulumi. ', image: fenLogo },
     { id: 3, name: 'Fen-X UI Project', description: 'Contributed to a Fenergo UI team where we worked on the core product, Fen-X, where we added new features to the user interface. Leveraged React and TypeScript to implement UI enhancements.', image: fenLogo },
 ];
