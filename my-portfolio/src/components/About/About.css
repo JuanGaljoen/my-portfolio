@@ -9,6 +9,14 @@
     padding-top: 50px;
 }
 
+.about-title {
+    color: black;
+}
+
+.about .text-grey {
+    text-align: center;
+}
+
 .about h2 {
     font-size: 45px;
     font-weight: 700;

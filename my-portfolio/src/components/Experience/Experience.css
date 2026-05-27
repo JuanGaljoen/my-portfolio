@@ -3,10 +3,32 @@
     background-color: #666;
 }
 
+.experience-title {
+    color: black;
+}
+
+.experience-title .text-grey {
+    text-align: center;
+}
+
+.experience-icon {
+    font-size: 40px;
+}
+
+.exp-badge-top {
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.exp-badge-list {
+    text-align: left;
+    margin-top: 15px;
+}
+
 .vertical-timeline-element-title {
     font-size: 1rem;
     color: black !important;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding-top: 10px;
@@ -15,7 +37,7 @@
 .vertical-timeline-element-subtitle {
     font-size: 1rem;
     color: darkslategray;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding-top: 5px;

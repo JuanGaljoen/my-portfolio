@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 import { Container, Row } from "react-bootstrap";
+import { Icon } from "@iconify/react";
 import clouds from '../../assets/images/clouds.mp4';
 import './Home.css';
 
@@ -24,30 +25,22 @@ export const Home = () => {
     }, []);
 
     return (
-        <div style={{ position: "relative" }}>
-            <Container className="banner" id="home" style={{ overflow: "hidden" }}>
+        <div className="home-wrapper">
+            <Container className="banner" id="home">
                 <video
                     autoPlay
                     loop
                     muted
                     playsInline
-                    style={{
-                        position: "absolute",
-                        top: 0,
-                        left: 0,
-                        width: "100%",
-                        height: "100%",
-                        objectFit: "cover",
-                        zIndex: -1,
-                    }}
+                    className="banner-video"
                 >
                     <source src={clouds} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
                 <Row className="align-items-center">
-                    <span className="iconify header-icon" data-icon="la:laptop-code" data-inline="false"></span>
-                    <h1 className="section-title" style={{ color: "white" }}>
-                        <span className="text-grey" style={{ textAlign: "center" }}>
+                    <Icon icon="la:laptop-code" className="header-icon" />
+                    <h1 className="section-title banner-title">
+                        <span className="text-grey">
                             Juan Viljoen
                         </span>
                     </h1>

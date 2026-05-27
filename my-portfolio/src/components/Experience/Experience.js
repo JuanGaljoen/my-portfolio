@@ -14,8 +14,8 @@ export const Experience = () => {
     <section id="experience" className="pb-5">
       <div className="col-md-12 mx-auto">
         <div className="col-md-12">
-          <h1 className="section-title" style={{ color: "black" }}>
-            <span className="text-grey" style={{ textAlign: "center" }}>
+          <h1 className="section-title experience-title">
+            <span className="text-grey">
               Work Experience
             </span>
           </h1>
@@ -24,9 +24,9 @@ export const Experience = () => {
 
       <div className="col-md-8 mx-auto">
         <VerticalTimeline>
-          {experiences.map((exp, index) => (
+          {experiences.map((exp) => (
             <VerticalTimelineElement
-              key={index}
+              key={exp.company}
               className="vertical-timeline-element--work"
               date={exp.date}
               iconStyle={{
@@ -34,22 +34,22 @@ export const Experience = () => {
                 color: "white",
                 textAlign: "center",
               }}
-              icon={<Icon icon={exp.icon} style={{ fontSize: '40px' }} />}
+              icon={<Icon icon={exp.icon} className="experience-icon" />}
             >
-              <div style={{ textAlign: "left", marginBottom: "4px" }}>
+              <div className="exp-badge-top">
                 <Badge pill className="main-badge mr-2 mb-2">
                   {exp.badges[0]}
                 </Badge>
               </div>
-              <h3 className="vertical-timeline-element-title" style={{ textAlign: "left" }}>
+              <h3 className="vertical-timeline-element-title">
                 {exp.title}
               </h3>
-              <h4 className="vertical-timeline-element-subtitle" style={{ textAlign: "left" }}>
+              <h4 className="vertical-timeline-element-subtitle">
                 {exp.company}
               </h4>
-              <div style={{ textAlign: "left", marginTop: "15px" }}>
-                {exp.badges.slice(1).map((badge, i) => (
-                  <Badge key={i} pill className="experience-badge mr-2 mb-2">
+              <div className="exp-badge-list">
+                {exp.badges.slice(1).map((badge) => (
+                  <Badge key={badge} pill className="experience-badge mr-2 mb-2">
                     {badge}
                   </Badge>
                 ))}

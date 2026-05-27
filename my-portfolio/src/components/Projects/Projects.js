@@ -1,4 +1,5 @@
 import React from 'react';
+import { Icon } from '@iconify/react';
 import './Projects.css'
 import { personalProjects, enterpriseProjects } from '../../data/projects.js'
 
@@ -15,7 +16,7 @@ export const Projects = () => {
               <h3 className="project-title">{project.name}</h3>
               <p className="project-description">{project.description}</p>
               <a href={project.github} target="_blank" rel="noopener noreferrer" className="github-icon">
-                <span className="iconify" data-icon="mdi:github"></span>
+                <Icon icon="mdi:github" />
               </a>
             </div>
           </div>
