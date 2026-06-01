@@ -37,8 +37,8 @@ export const Experience = () => {
               icon={<Icon icon={exp.icon} className="experience-icon" />}
             >
               <div className="exp-badge-top">
-                <Badge pill className="main-badge mr-2 mb-2">
-                  {exp.badges[0]}
+                <Badge pill className="main-badge">
+                  {exp.industry}
                 </Badge>
               </div>
               <h3 className="vertical-timeline-element-title">
@@ -47,13 +47,18 @@ export const Experience = () => {
               <h4 className="vertical-timeline-element-subtitle">
                 {exp.company}
               </h4>
-              <div className="exp-badge-list">
-                {exp.badges.slice(1).map((badge) => (
-                  <Badge key={badge} pill className="experience-badge mr-2 mb-2">
-                    {badge}
-                  </Badge>
-                ))}
-              </div>
+              {exp.tech && (
+                <div className="exp-badge-list">
+                  {exp.tech.map((badge) => (
+                    <Badge key={badge} pill className="experience-badge">
+                      {badge}
+                    </Badge>
+                  ))}
+                </div>
+              )}
+              {exp.description && (
+                <p className="exp-description">{exp.description}</p>
+              )}
             </VerticalTimelineElement>
           ))}
 

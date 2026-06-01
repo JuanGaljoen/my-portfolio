@@ -5,7 +5,8 @@ export const experiences = [
         date: "June 2025 - Present",
         icon: "mdi:language-csharp",
         backgroundColor: "#404040",
-        badges: ["Manufacturing", "C# .NET, ", "SQL"],
+        industry: "Manufacturing",
+        tech: ["C# .NET", "SQL"],
     },
     {
         title: "Software Engineer",
@@ -13,7 +14,8 @@ export const experiences = [
         date: "Jul 2024 - May 2025",
         icon: "mdi:language-rust",
         backgroundColor: "#404040",
-        badges: ["Agri-Manufacturing", "Flutter, ", "Rust"],
+        industry: "Agri-Manufacturing",
+        tech: ["Flutter", "Rust"],
     },
     {
         title: "Software Engineer",
@@ -21,7 +23,8 @@ export const experiences = [
         date: "Oct 2023 - June 2024",
         icon: "mdi:language-csharp",
         backgroundColor: "#404040",
-        badges: ["Fintech", "C# .NET, ", "React, ", "AWS"],
+        industry: "Fintech",
+        tech: ["C# .NET", "React", "AWS"],
     },
     {
         title: "Jewellery Designer",
@@ -29,12 +32,8 @@ export const experiences = [
         date: "Oct 2014 - 2023",
         icon: "mdi:diamond",
         backgroundColor: "#404040",
-        badges: [
-            "Design",
-            "Designing custom engagement rings and jewellery. ",
-            "Communicating with customers. ",
-            "Providing beneficial advice and support. ",
-            "Maintaining a loyal customer base.",
-        ],
+        industry: "Design",
+        description:
+            "Designed custom engagement rings and jewellery, working closely with customers to provide advice and support while maintaining a loyal customer base.",
     },
 ];

@@ -1,10 +1,11 @@
 #experience {
     padding-top: 60px;
-    background-color: #666;
+    padding-bottom: 40px;
+    background-color: #121212;
 }
 
 .experience-title {
-    color: black;
+    color: white;
 }
 
 .experience-title .text-grey {
@@ -15,63 +16,119 @@
     font-size: 40px;
 }
 
+/* Timeline spine + icon ring tuned for the dark theme */
+.vertical-timeline {
+    --line-color: rgba(255, 255, 255, 0.12);
+}
+
+.vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px #2a2a2a,
+        inset 0 2px 0 rgba(0, 0, 0, 0.08),
+        0 3px 0 4px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Cards */
+.vertical-timeline-element-content {
+    background: #1f1f1f !important;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vertical-timeline-element-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.55) !important;
+}
+
+.vertical-timeline-element-content-arrow {
+    border-right-color: #1f1f1f !important;
+}
+
+/* Keep the trailing (childless) timeline node transparent */
+.vertical-timeline-element--no-children .vertical-timeline-element-content {
+    background: transparent !important;
+    border: none;
+    box-shadow: none !important;
+}
+
+/* Industry pill */
 .exp-badge-top {
     text-align: left;
-    margin-bottom: 4px;
-}
-
-.exp-badge-list {
-    text-align: left;
-    margin-top: 15px;
-}
-
-.vertical-timeline-element-title {
-    font-size: 1rem;
-    color: black !important;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding-top: 10px;
-}
-
-.vertical-timeline-element-subtitle {
-    font-size: 1rem;
-    color: darkslategray;
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    padding-top: 5px;
-}
-
-.vertical-timeline-element-date {
-    font-size: 1rem;
-    color: black;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-.vertical-timeline-element-content {
-    font-size: 1rem;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    margin-bottom: 12px;
 }
 
 .main-badge {
-    font-size: 1rem;
-    color: white;
+    font-size: 0.7rem;
+    color: #d0d0d0;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    background-color: #B8B8B8;
-    border-radius: 10px;
-    padding: 5px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+/* Role title */
+.vertical-timeline-element-title {
+    font-size: 1.15rem;
+    color: #ffffff !important;
+    text-align: left;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    padding-top: 4px;
+}
+
+/* Company */
+.vertical-timeline-element-subtitle {
+    font-size: 0.95rem;
+    color: #8a8a8a;
+    text-align: left;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    padding-top: 6px;
+}
+
+/* Date (sits beside the card on desktop) */
+.vertical-timeline-element-date {
+    color: #b8b8b8 !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem !important;
+    opacity: 1 !important;
+}
+
+/* Tech tags */
+.exp-badge-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .experience-badge {
-    font-size: 1rem;
-    color: darkslategray;
-    text-align: center;
-    letter-spacing: 3px;
-    padding-top: 5px;
+    font-size: 0.8rem;
+    color: #c0c0c0;
+    letter-spacing: 1px;
+    font-weight: 400;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 6px;
+    padding: 4px 10px;
+}
 
+/* Prose description (e.g. the design role) */
+.exp-description {
+    color: #b8b8b8;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+    text-align: left;
+    max-width: 48ch;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
