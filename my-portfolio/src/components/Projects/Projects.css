@@ -121,7 +121,9 @@
     gap: 12px;
 }
 
-.project-card:hover .project-overlay {
+.project-card:hover .project-overlay,
+.project-card:focus-within .project-overlay,
+.project-card.is-open .project-overlay {
     opacity: 1;
 }
 
@@ -189,7 +191,6 @@
     padding: 60px 0 40px 0;
 }
 
-/* Touch devices have no hover: show the logo, then the detail statically */
 @media (max-width: 768px) {
     #projects-section {
         padding: 40px 15px;
@@ -200,15 +201,5 @@
     .projects-container {
         grid-template-columns: 1fr;
         gap: 24px;
-    }
-
-    .project-titlebar {
-        display: none;
-    }
-
-    .project-overlay {
-        position: static;
-        opacity: 1;
-        background-color: #181818;
     }
 }
