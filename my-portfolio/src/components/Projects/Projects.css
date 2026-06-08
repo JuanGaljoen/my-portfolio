@@ -10,50 +10,170 @@
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 80px;
-    max-width: 1300px;
-    width: 80%;
-    /* margin: 0 auto; */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+    max-width: 1100px;
+    width: 90%;
 }
 
 .project-card {
     position: relative;
-    border-radius: 8px;
+    border-radius: 12px;
     overflow: hidden;
+    background-color: #181818;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo sits contained on a consistent light chip */
+.project-logo {
     aspect-ratio: 1 / 1;
-    background-color: rgba(248, 245, 244, 0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
 }
 
 .project-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
-.project-overlay {
+/* Branded logo block (icon + wordmark) for projects without an image */
+.project-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    color: #111111;
+}
+
+.project-brand-icon {
+    font-size: 90px;
+}
+
+.project-brand-name {
+    font-weight: 700;
+    letter-spacing: 6px;
+    font-size: 1.35rem;
+    color: #111111;
+}
+
+/* Always-visible caption at the bottom of the tile */
+.project-titlebar {
     position: absolute;
-    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    padding: 14px 18px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0));
+    pointer-events: none;
+}
+
+.project-titlebar .project-title {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Full detail — fades in on hover */
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(17, 17, 17, 0.94);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
+    gap: 16px;
+    padding: 24px;
+    text-align: center;
+    overflow: hidden;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
 
-.project-title {
-    color: white;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    text-align: center;
+/* Title + description: vertically centered in the free space */
+.project-overlay-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    min-height: 0;
+}
+
+/* Badges + link: pinned to the bottom, same place on every card */
+.project-overlay-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-overlay .project-title {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.project-description {
+    margin: 0;
+    color: #cfcfcf;
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.project-badge {
+    font-size: 0.78rem;
+    color: #c0c0c0;
+    letter-spacing: 0.5px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 6px;
+    padding: 4px 10px;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+    color: #d0d0d0;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.project-link svg {
+    font-size: 1.3rem;
+}
+
+.project-link:hover {
+    color: #ffffff;
+    transform: translateX(3px);
 }
 
 .enterprise-subtitle {
@@ -65,38 +185,7 @@
     padding: 60px 0 40px 0;
 }
 
-.project-description {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1rem;
-    text-align: center;
-}
-
-.github-icon {
-    position: static;
-    transform: none;
-    text-align: center;
-    margin-top: 5px;
-    color: white;
-    font-size: 32px;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.github-icon:hover {
-    color: #f3f3f3;
-    transform: scale(1.4);
-}
-
-.project-card:hover .project-overlay,
-.project-card:focus .project-overlay,
-.project-card:active .project-overlay {
-    opacity: 1;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
+/* Touch devices have no hover: show the logo, then the detail statically */
 @media (max-width: 768px) {
     #projects-section {
         padding: 40px 15px;
@@ -104,66 +193,18 @@
         margin-bottom: 40px;
     }
 
-    .projects-title {
-        font-size: 1.75rem;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
     .projects-container {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
 
-    .project-card {
-        aspect-ratio: auto;
-        height: auto;
-    }
-
-    .project-image {
-        aspect-ratio: 16 / 9;
-        object-fit: cover;
+    .project-titlebar {
+        display: none;
     }
 
     .project-overlay {
         position: static;
         opacity: 1;
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 15px;
-    }
-
-    .project-title {
-        font-size: 2.1rem;
-    }
-
-    .project-description {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    #projects-section {
-        padding: 30px 10px;
-    }
-
-    .projects-title {
-        font-size: 2.1rem;
-    }
-
-    .projects-container {
-        gap: 30px;
-    }
-
-    .project-title {
-        font-size: 1rem;
-    }
-
-    .project-description {
-        font-size: 0.9rem;
-    }
-
-    .github-icon {
-        padding-top: 8px;
+        background-color: #181818;
     }
 }

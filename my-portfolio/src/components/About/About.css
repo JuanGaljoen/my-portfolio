@@ -72,10 +72,6 @@
         width: 90%;
     }
 
-    .me-pic {
-        width: 90%;
-    }
-
     .name-heading {
         font-size: larger !important;
         max-width: 100;
@@ -95,10 +91,6 @@
         width: 90%;
     }
 
-    .me-pic {
-        width: 90%;
-    }
-
     .name-heading {
         font-size: larger !important;
         max-width: 100;
@@ -106,18 +98,6 @@
 
     nav.navbar.scrolled {
         display: none;
-    }
-}
-
-@media (min-width: 768px) {
-    .me-pic {
-        width: 150px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .me-pic {
-        width: 500px;
     }
 }
 
