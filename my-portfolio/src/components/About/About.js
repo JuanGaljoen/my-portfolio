@@ -16,7 +16,6 @@ export const About = () => {
                     <br></br><br></br>
                     In my spare time I'm either working on an old Vespa, cycling, taking my dog for a hike/fishing trip or spending time with friends. I am very passionate about music, classic cars and motorbikes.
                 </p>
-                {/* <div className="profileImg"><img role="presentation" className="me-pic" src={pic1} width="100" alt="profile pic" /></div> */}
                 <a className="resume-button" href={resume} target="_blank" rel="noreferrer">
                     view resume
                 </a>
