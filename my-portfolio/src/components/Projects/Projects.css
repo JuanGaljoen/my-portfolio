@@ -137,6 +137,10 @@
     color: #cfcfcf;
     font-size: 0.9rem;
     line-height: 1.55;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .project-tech {
