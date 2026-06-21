@@ -127,6 +127,10 @@
     opacity: 1;
 }
 
+.project-card.is-suppressed .project-overlay {
+    opacity: 0;
+}
+
 .project-overlay .project-title {
     margin: 0;
     color: #ffffff;

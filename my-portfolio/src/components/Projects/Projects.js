@@ -4,6 +4,8 @@ import './Projects.css'
 import { personalProjects, enterpriseProjects } from '../../data/projects.js'
 
 const ProjectCard = ({ project, isOpen, onToggle }) => {
+  const [suppressed, setSuppressed] = useState(false);
+
   // On touch / no-hover devices, tap the tile to toggle the detail overlay.
   // Desktop keeps pure CSS hover (handled in CSS), so we bail out there.
   const handleClick = (e) => {
@@ -13,8 +15,19 @@ const ProjectCard = ({ project, isOpen, onToggle }) => {
     onToggle();
   };
 
+  const handleLinkClick = (e) => {
+    if (e.detail > 0) {
+      e.currentTarget.blur();
+      setSuppressed(true);
+    }
+  };
+
   return (
-    <div className={`project-card${isOpen ? ' is-open' : ''}`} onClick={handleClick}>
+    <div
+      className={`project-card${isOpen ? ' is-open' : ''}${suppressed ? ' is-suppressed' : ''}`}
+      onClick={handleClick}
+      onMouseLeave={() => setSuppressed(false)}
+    >
       <div className="project-logo">
         {project.icon ? (
           <div className="project-brand">
@@ -46,7 +59,7 @@ const ProjectCard = ({ project, isOpen, onToggle }) => {
             </div>
           )}
           {project.github && (
-            <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link">
+            <a href={project.github} target="_blank" rel="noopener noreferrer" className="project-link" onClick={handleLinkClick}>
               <Icon icon="mdi:github" />
               <span>View code</span>
             </a>
