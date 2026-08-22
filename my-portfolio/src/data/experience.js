@@ -2,7 +2,7 @@ export const experiences = [
     {
         title: "Software Engineer",
         company: "Dynamic Build Systems",
-        date: "June 2025 - Present",
+        date: "July 2025 - Present",
         icon: "mdi:language-csharp",
         backgroundColor: "#404040",
         industry: "Manufacturing",
@@ -11,7 +11,7 @@ export const experiences = [
     {
         title: "Software Engineer",
         company: "Culture Systems",
-        date: "Jul 2024 - May 2025",
+        date: "Jul 2024 - Jun 2025",
         icon: "mdi:language-rust",
         backgroundColor: "#404040",
         industry: "Agri-Manufacturing",
