@@ -1,5 +1,5 @@
 import React from "react";
-import resume from '../../assets/resume/Juan_Viljoen_resume.pdf';
+import resume from '../../assets/resume/Juan_Viljoen_Resume.pdf';
 import './About.css'
 
 export const About = () => {
