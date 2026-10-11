@@ -13,5 +13,5 @@ export const skills = [
     { name: "MySql", icon: "mdi:database" },
     { name: "Git", icon: "mdi:git" },
     { name: "AWS", icon: "mdi:aws" },
-    { name: "Anthropic", icon: "simple-icons:claude" },
+    { name: "Claude", icon: "simple-icons:claude" },
 ];
