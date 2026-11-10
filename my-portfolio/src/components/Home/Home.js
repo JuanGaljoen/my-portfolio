@@ -32,6 +32,7 @@ export const Home = () => {
                     loop
                     muted
                     playsInline
+                    poster={`${process.env.PUBLIC_URL}/clouds-poster.jpg`}
                     className="banner-video"
                 >
                     <source src={clouds} type="video/mp4" />
