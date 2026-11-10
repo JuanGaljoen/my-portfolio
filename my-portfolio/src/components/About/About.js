@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Fragment } from "react";
 import resume from '../../assets/resume/Juan_Viljoen_Resume.pdf';
+import { aboutParagraphs } from '../../data/about';
 import './About.css'
 
 export const About = () => {
@@ -12,15 +13,17 @@ export const About = () => {
                     </span>
                 </h1>
                 <p>
-                    I am a passionate full-stack developer with hands-on experience in software development and a strong foundation in cloud computing. Continuously learning new technologies, I strive to build scalable, secure, and reliable solutions. I thrive in collaborative environments and am eager to contribute to innovative teams and drive organizational success.
-                    <br></br><br></br>
-                    In my spare time I'm either working on an old Vespa, cycling, taking my dog for a hike/fishing trip or spending time with friends. I am very passionate about music, classic cars and motorbikes.
+                    {aboutParagraphs.map((paragraph, i) => (
+                        <Fragment key={i}>
+                            {i > 0 && <><br /><br /></>}
+                            {paragraph}
+                        </Fragment>
+                    ))}
                 </p>
                 <a className="resume-button" href={resume} target="_blank" rel="noreferrer">
                     view resume
                 </a>
             </div>
         </div>
-
     )
-}  
+}
